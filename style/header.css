@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#topbar {
+    width: 100%;
+    height: 39px;
+}
+
+#topbar>#prv_navbar {
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+#topbar>#prv_navbar>div {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#topbar>#prv_navbar>div>h6 {
+    font-size: 15.5px;
+    font-family: Open-Sans, sans-serif;
+    font-weight: 400;
+    color: #292d35;
+    letter-spacing: 0.2px;
+    /* border: 1px solid teal; */
+    cursor: pointer;
+}
+
+#topbar>#prv_navbar>div>i {
+    /* border: 1px solid black; */
+    padding: 20px 9px 20px 9px;
+    font-size: 19px;
+    color: #80aa38;
+    cursor: pointer;
+}
+
+/* navbar starts here */
+#navbar {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    position: sticky;
+    background-color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#container {
+    width: 85%;
+    height: 100%;
+    /* border: 1px dashed black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container>img {
+    /* border: 1px solid red; */
+    width: 90px;
+    height: 46px;
+    margin: 27px 0px 0px 16px;
+    cursor: pointer;
+}
+
+#container>#ham_burgur {
+    width: 29px;
+    height: auto;
+    margin: 35px 55px;
+    /* cursor: pointer; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+#container>#ham_burgur>div {
+    background-color: #292d35;
+    width: 29px;
+    height: 2px;
+    cursor: pointer;
+
+}
+
+#container>#ham_burgur>#ham_burgur_icon {
+    background-color: #292d35;
+    width: 14px;
+    height: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: width 1s;
+    margin: 10px 0px 9px 15px;
+}
+
+#container>#ham_burgur>#ham_burgur_icon:hover {
+    width: 29px;
+    height: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: #80aa38;
+}
+
+.big:hover {
+    background-color: #80aa38;
+}
+
+/* sidepannel */
+#sidepannel {
+    width: 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* border: 1px solid red; */
+    background-color: #292d35;
+    transition: 0.4s;
+}
+
+#sidepannel>#sidebar_top {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#sidepannel>#sidebar_top>img {
+    width: 100px;
+    height: 53px;
+    padding: 27px 25px 30px 44px;
+}
+
+#sidepannel>#sidebar_top>.closebtn {
+    color: white;
+    padding: 35px 42px 23px 29px;
+    font-size: 45px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#sidepannel>#sidebar_top>.closebtn:hover {
+    color: #80aa38
+}
+
+
+#sidepannel>#sidebar_bottom {
+    border-bottom: 1px solid gray;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+
+}
+
+#sidepannel>#sidebar_bottom>div {
+    color: white;
+    /* border: 1px solid red; */
+    width: 90%;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    /* background-color: #80aa38; */
+    padding: 7px 0px 8px 20px;
+    border-radius: 25px;
+    text-align: left;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#sidepannel>#sidebar_bottom>div:hover{
+    color: #80aa38;
+    transition: 0.5s;
+}
+#sidepannel>#sidebar_bottom>#home:hover{
+    color: #ffffff;
+    transition: 0.8s;
+}
+#sidepannel>#sidebar_bottom>#home {
+    background-color: #80aa38;
+
+}
+#sidepannel>#sidebar_bottom>#pannel:hover{
+    color: #ffffff;
+}
+#sidepannel>#sidebar_bottom>#pannel>.accordance:hover{
+    color: #80aa38;
+    transition: 0.5s;
+}
+
+
+
+#sidepannel>#sidebar_bottom>.arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidepannel>#sidebar_bottom>.arrow>.arrow_mark {
+    margin-right: 25px;
+}
+
+#sidepannel>#sidebar_bottom>#pannel {
+    display: none;
+}
+
+/* 
+meal plane panel */
+#pannel>.accordance>.accordance_meal {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#pannel>.accordance>.accordance_meal>div:nth-child(1) {
+    font-weight: 200;
+    margin-right: 9px;
+}
+
+/* 
+meal plan panel end */
+
+
+
+/* navbar ends here */
+
+#nothing {
+
+    border: 10px solid black;
+    height: 10000px;
+    width: 90%;
+    background-color: red;
+}
