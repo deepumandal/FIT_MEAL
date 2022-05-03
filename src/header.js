@@ -2,17 +2,17 @@
 // this is navbar property
 
 
-window.onscroll = function () { myFunction() };
+window.onscroll = function() {myFunction()};
 
 var main_header = document.getElementById("navbar");
 var sticky = main_header.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        main_header.classList.add("sticky")
-    } else {
-        main_header.classList.remove("sticky");
-    }
+  if (window.pageYOffset >= sticky) {
+    main_header.classList.add("sticky")
+  } else {
+    main_header.classList.remove("sticky");
+  }
 }
 
 // this is navbar property above
@@ -23,7 +23,7 @@ function myFunction() {
 
 
 function openNav() {
-    document.getElementById("sidepannel").style.width = "600px"
+    document.getElementById("sidepannel").style.width = "550px"
 }
 
 function closeNav() {
