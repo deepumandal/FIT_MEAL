@@ -1,10 +1,21 @@
+body{
+    margin: 0px;
+}
+#img1{
+    width: 100%;
+    position: absolute;
+    bottom: 534px;
+}
 footer{
-    margin-top: 200px;
+    position: absolute;
+    bottom: 0px;
+    /* margin-top: 200px; */
     height: 534px;
-    width: 99%;
+    width: 100%;
     /* border: 1px solid red; */
     background-color: #292d35;
     display: flex;
+    margin-top: -10px;
 }
 footer>div:first-child{
     height: 100%;
@@ -31,18 +42,24 @@ footer>div:first-child>p{
     /* border: 1px solid white; */
     display: flex;
 }
+#socials a{
+    color: white;
+}
+#socials a:hover{
+    color: #292d35;
+}
 #socials>div{
     width: 20%;
     height: 100%;
     background: #8ec038;
     border-radius: 50%;
     margin-right: 10px;
-    /* transform: rotate(y) */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     cursor: pointer;
+    /* transform: rotate(x); */
 }
 #socials>div:hover{
     background: white;
@@ -59,7 +76,10 @@ footer>div:last-child>div{
     width: 30%;
     /* border: 1px solid red; */
     box-sizing: border-box;
-    padding: 80px 100px 150px 70px;
+    padding: 80px 0px 150px 0px;
+}
+footer>div:last-child>div>div{
+    margin-top: 30px;
 }
 footer h2{
     font-family: 'Fira Sans', sans-serif;
@@ -80,4 +100,31 @@ footer h2+ul>li:hover{
 }
 footer h2+ul>li{
     margin-bottom: 15px;
+}
+.contacts{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.contacts>div{
+    margin-left: 10px;
+    margin-top: -12px;
+    line-height: 15px;
+}
+.contacts>i{
+    color: #8ec038;
+}
+.contacts>i+div>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 100;
+}
+.contacts>i+div>p:hover{
+    color: #8ec038;
+}
+.contacts>i+div>p:first-child{
+    color: #8ec038;
+    font-size: 13px;
+    font-weight: bold;
 }
