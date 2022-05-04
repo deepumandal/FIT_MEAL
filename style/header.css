@@ -53,6 +53,7 @@ body {
     border: 1px solid #e5e5e5;
     position: sticky;
     background-color: white;
+    z-index: 1000;
 }
 
 .sticky {

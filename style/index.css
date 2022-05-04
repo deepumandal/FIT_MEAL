@@ -1,149 +1,536 @@
 /* 
 slideshow css starts here */
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Sacramento&display=swap');
 #slideshow{
     width: 100%;
     height: 600px;
     overflow: hidden;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    z-index: 1;
+}
+.slides>div{
+    width: 100%;
+    height: 600px;
 }
 
-.slides{
-    display: flex;
-    justify-content: space-between;
-}
 
 #slideshow>#slides{
     background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_01.jpg');
-    animation: slides 7s linear infinite;
+    animation: slides 9s linear infinite;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;    
-}
-#slideshow>#slides>#class{
- animation: static 7s linear infinite;
-    
-}
 
+}
 
 #slideshow>#slidestwo{
     background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg');
-    animation: slides 7s linear infinite;
-}
-#slideshow>#slidesthree{
-    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg');
-    animation: slides 7s linear infinite;
-}
-#slideshow>#slidesfour{
-    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg');
-    animation: slides 7s linear infinite;
-}
-
-
-
-
-#slides>div:nth-child(1),#slides>div:nth-child(3){
-    border: 1px solid black;
-   
-    height: 700px;
-    width: 20%;
-    animation: none;
-   
+    animation: slides 9s linear infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;    
 
     
 }
+#slideshow>#slidesthree{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg');
+    animation: slides 9s linear infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;    
+    
 
-#slidestwo>div:nth-child(1),#slidestwo>div:nth-child(3){
-    border: 1px solid black;
-    height: 700px;
-    width: 20%;
 }
+#slideshow>#slidesfour{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg');
+    animation: slides 9s linear infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;    
+   
 
-
-#slidesthree>div:nth-child(1),#slidesthree>div:nth-child(3){
-    border: 1px solid black;
-    height: 700px;
-    width: 20%;
 }
-
-
-#slidesfour>div:nth-child(1),#slidesfour>div:nth-child(3){
-    border: 1px solid black;
-    height: 700px;
-    width: 20%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 @keyframes slides{
     0% {
         transform: scale(1, 1);
-        opacity: 5%;
+        opacity: 50%;
+        filter: saturate(100%);
+        filter: drop-shadow(50%);
+        
       }
       25%{
           transform: scale(1.05,1.05);
-          opacity: 45%;
+          opacity: 100%;
+          filter: saturate(100%);
+          filter: drop-shadow(50%);
+
       }
       75%{
         transform: scale(1.25,1.25);
-        opacity: 90%;
+        opacity: 100%;
+        filter: saturate(100%);
+        filter: drop-shadow(50%);
     }
     100%{
         transform: scale(1.3,1.3) ;
-        opacity: 98%;
+        opacity: 100%;
+        filter: saturate(100%);
+        filter: drop-shadow(50%);
     }
 } 
 
-@keyframes static {
-    0% {
-        transform: scale(1, 1);
-        opacity: 100%;
-      }
-      25%{
-        transform: scale(1.250,1.25);
-        opacity: 100%;
-      }
-      75%{
-        transform: scale(1.45,1.45);
-        opacity: 100%;
-    }
-    100%{
-        transform: scale(1.5,1.5);
-        opacity: 100%;
-    }
+/* data here */
+
+
+#slideshow>.data{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 142px;
+    display: flex;
+  
+}
+#slideshow>.data>#element>h1{
+    /* border: 1px solid red; */
+    font-size: 55px;
+    text-align: center;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fafafa;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+/* 2nd slide */
+
+#slideshow>.data>#elementtwo>h1{
+    /* border: 1px solid red; */
+    font-size: 55px;
+    text-align: center;
+    margin-top: 125px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fafafa;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+#slideshow>.data>#elementtwo>p{
+    /* border: 1px solid red; */
+    text-align: center; 
+    font-size: 20px;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    color: white;
+}
+#slideshow>.data>#elementtwo>button{
+    /* border: 1px solid red; */
+    border: none;
+    background-color:#8ec038;
+    color:#fafafa ;
+    cursor: pointer;
+    text-align: center; 
+    padding: 16px 31px;
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+    margin: 4% 40% 10% 41%;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+/* 
+3rd side */
+#slideshow>.data>#elementthree>h1{
+    /* border: 1px solid red; */
+    font-size: 65px;
+    text-align: center;
+    margin-top: 155px;
+    padding-left: 55px;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    padding-right: 55px;
+    color: #fafafa;
+}
+#slideshow>.data>#elementthree>p{
+    /* border: 1px solid red; */
+    text-align: center; 
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    font-size: 20px;
+    color: white;
+}
+#slideshow>.data>#elementthree>#button{
+    /* border:  1px solid red; */
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    cursor: pointer;
+
+    margin-top: 80px;
+}
+#slideshow>.data>#elementthree>#button>button:nth-child(1){
+    /* border: 1px solid red; */
+    border: none;
+    background-color:  #4b4a49;
+    text-align: center; 
+    padding: 16px 30px;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    margin: 20px 44px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fafafa;
+    letter-spacing: 0.5px;
+ 
+
+}
+#slideshow>.data>#elementthree>#button>button:nth-child(2){
+    /* border: 1px solid red; */
+    border: none;
+    margin: 20px 44px;
+    cursor: pointer;
+    padding: 16px 30px;
+     
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    border-radius: 25px;
+    color: #fafafa;
+    letter-spacing: 0.5px;
+    background-color: #8ec038;
+   }
+
+/* 4rth slide */
+#slideshow>.data>#elementfour>h1{
+    /* border: 1px solid red; */
+    font-size: 65px;
+    text-align: center;
+    margin-top: 155px; 
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #fafafa;
+}
+#slideshow>.data>#elementfour>p{
+    /* border: 1px solid red; */
+    text-align: center; 
+    font-size: 20px;
+    color: white; 
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+#slideshow>.data>#elementfour>button{
+    /* border:  1px solid red; */
+    text-align: center; 
+    padding: 16px 30px;
+    margin: 90px 346px;
+    border-radius: 35px;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 20px;
+    color: snow;
+    background-color: #4b4a49;
+    cursor: pointer; 
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+ 
+}
+
+
+
+
+#leftsidebtn{
+    width: 20%;
+    height: 600px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    position: absolute;
+    top: 142px;
+    align-items: center;
+    z-index: 5;
     
 }
+#leftsidebtn>div{
+    /* border: red; */
+    width: 75px;
+    height: 75px;
+    box-shadow:  rgba(81, 72, 68, 0.995) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    position: absolute;
+    left: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    z-index: 100000;
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(81, 72, 68, 0.235);
+    cursor: pointer;
+    align-items: center;
+}
+#rightsidebtn{
+    width: 20%;
+    height: 600px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+top: 142px;
+   right: 0px;
+}
+#rightsidebtn>div{
+    border: #4b4a49;
+    width: 75px;
+    height: 75px;
+     
+  
+    box-shadow:  rgba(81, 72, 68, 0.995) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+    right: 20px;
+    position: absolute;
+    display: flex;justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #5148443a;
+    cursor: pointer;
+}
+#rightsidebtn>div>i{
+    font-size: 35px;
+    color: #4b4a49;
+   
+}
+#leftsidebtn>div>i{
+    font-size: 35px;
+    color: #4b4a49;
+
+}
+
+
+
+#slideshow>.data>#element,#slideshow>.data>#elementtwo,#slideshow>.data>#elementthree,#slideshow>.data>#elementfour{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #secound{
-    border: 1px solid red;
-    width: 1300px;
+    /* border: 1px solid red; */
+    width: 1200px;
     height: 600px;
     margin: auto;
+   
 }
 #secound>#secound_div{
-    border: 1px solid black;
-        width: 90%;
+    /* border: 1px solid black; */
+        width: 80%;
         height: 100%;
     margin: auto;
+    display: flex;
+    
+} 
+#secount_text{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid darkblue; */
+    align-self: left;
+    margin-top: 100px;
+}
+#secount_text>h1:nth-child(1){
+  line-height: 62px;
+  font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #292d35;
+}
+#secount_text>h1:nth-child(2){
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 8px;
+    color: #8ec038;
+}   
+#secount_text>p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #292d35;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    letter-spacing: 0.5px;
+}
+#secount_text>button{
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 22px;
+    background-color: #292d35;
+    border-radius: 25px;
+    padding:12px 39px 10px 39px;
+    border: none;
+    margin: 31px 3px 1px 28px;
+}
+
+
+#secound>#secound_div>img{
+    margin:45px 21px 0px 36px;
+    width: 24%;
+    height: 57%;
+}
+
+#secound_list{
+    width: 35%;height: 100%;
+    /* border:  1px dashed black; */
+}
+#secound_list>ul{
+    list-style: none;
+    margin-top: 100px;
+    padding-left: 10px;
+}
+#secound_list>ul>li{
+   line-height: 70px;
+    color: #292d35;
+   
+}
+#secound_list>ul>li>i{
+    color: #8ec038;
+    margin-right: 9px;
+}
+.classlist{
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    font-size: 16px;
+    
+}
+
+/* 
+sp why chose fitmeals */
+#why{
+    width: 100%;
+   height: auto;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #f3f5ed;
+    /* border: 1px solid red; */
+}
+#why>#reason{
+    width: 1100px;
+    height: 1000px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+#why>#reason>#reason_text{
+    width: 90%;
+    height: 35%;
+    /* border: 1px dashed red; */
+    margin: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#why>#reason>#reason_text>p:nth-child(1){
+color: #8ec038;
+font-family: 'Sacramento', cursive;
+font-size: 49px;
+font-weight: 400;
+margin: 0px;
+text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+#why>#reason>#reason_text>p:nth-child(3){
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0px;
+    color: #292d35;
+ 
+}
+
+#why>#reason>#reason_text>h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    line-height: 62px;
+    font-size: 48px;
+    color: #292d35;
+    margin: 0px ;
+}
+
+
+
+/* 
+2d animation */
+
+
+
+
+#why>#reason>#D3_animation{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 30%;
+  
+    margin: auto;
+    display: flex;    
+
+}
+#why>#reason>#D3_animation>.subject{
+    width: 25%;
+    height: 100%;
+    /* border: 1px dashed black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#why>#reason>#D3_animation>.subject>div{
+    height: 63px;
+    width: 63px;
+    background-color: #8ec038;
+    padding: 9px;
+    border-radius: 50%;
+}
+#why>#reason>#D3_animation>.subject>div>.flip{
+    width: 62px;
+    height: 62px;
+    filter: brightness(200%) hue-rotate(360deg) saturate(0%) contrast(116%);
+-webkit-filter: brightness(200%) hue-rotate(360deg) saturate(0%) contrast(116%);
+-moz-filter: brightness(200%) hue-rotate(360deg) saturate(0%) contrast(116%);
 }
 
 
@@ -151,6 +538,53 @@ slideshow css starts here */
 
 
 
+#why>#reason>#D3_animation>.subject>div:hover{
+    animation: flipimage 1s linear infinite ;
+    cursor: pointer;
+}
+@keyframes flipimage{
+   100%{
+        transform: rotateY(360deg);
+    }
+}
+#why>#reason>#D3_animation>.subject>p:nth-child(2){
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    color: #292d35;
+}
 
 
+#why>#reason>#D3_animation>.subject>p:nth-child(3){
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0px;
+    color: #292d35;
+}
 
+/* big image rotation */
+#why>div:nth-child(2){
+    display: flex;
+    margin-top: -210px;
+}
+#why>div>#rotate{
+    /* border: 1px solid red; */
+    margin-top: -200px;
+    width: 1000px;
+    height: 1000px;
+    margin: auto
+}
+
+#why>div>#rotate:hover{
+    animation: rotateimage 10s linear infinite;
+    cursor: pointer;
+}
+@keyframes rotateimage{
+   100%{
+    transform: rotate(360deg) ;
+   }
+}
