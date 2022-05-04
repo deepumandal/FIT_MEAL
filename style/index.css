@@ -1,0 +1,156 @@
+/* 
+slideshow css starts here */
+
+
+
+#slideshow{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.slides{
+    display: flex;
+    justify-content: space-between;
+}
+
+#slideshow>#slides{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_01.jpg');
+    animation: slides 7s linear infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+#slideshow>#slides>#class{
+ animation: static 7s linear infinite;
+    
+}
+
+
+#slideshow>#slidestwo{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg');
+    animation: slides 7s linear infinite;
+}
+#slideshow>#slidesthree{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg');
+    animation: slides 7s linear infinite;
+}
+#slideshow>#slidesfour{
+    background-image: url(' https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg');
+    animation: slides 7s linear infinite;
+}
+
+
+
+
+#slides>div:nth-child(1),#slides>div:nth-child(3){
+    border: 1px solid black;
+   
+    height: 700px;
+    width: 20%;
+    animation: none;
+   
+
+    
+}
+
+#slidestwo>div:nth-child(1),#slidestwo>div:nth-child(3){
+    border: 1px solid black;
+    height: 700px;
+    width: 20%;
+}
+
+
+#slidesthree>div:nth-child(1),#slidesthree>div:nth-child(3){
+    border: 1px solid black;
+    height: 700px;
+    width: 20%;
+}
+
+
+#slidesfour>div:nth-child(1),#slidesfour>div:nth-child(3){
+    border: 1px solid black;
+    height: 700px;
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slides{
+    0% {
+        transform: scale(1, 1);
+        opacity: 5%;
+      }
+      25%{
+          transform: scale(1.05,1.05);
+          opacity: 45%;
+      }
+      75%{
+        transform: scale(1.25,1.25);
+        opacity: 90%;
+    }
+    100%{
+        transform: scale(1.3,1.3) ;
+        opacity: 98%;
+    }
+} 
+
+@keyframes static {
+    0% {
+        transform: scale(1, 1);
+        opacity: 100%;
+      }
+      25%{
+        transform: scale(1.250,1.25);
+        opacity: 100%;
+      }
+      75%{
+        transform: scale(1.45,1.45);
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(1.5,1.5);
+        opacity: 100%;
+    }
+    
+}
+
+
+#secound{
+    border: 1px solid red;
+    width: 1300px;
+    height: 600px;
+    margin: auto;
+}
+#secound>#secound_div{
+    border: 1px solid black;
+        width: 90%;
+        height: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
