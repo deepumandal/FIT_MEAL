@@ -95,7 +95,7 @@ body {
     width: 29px;
     height: 2px;
     cursor: pointer;
-
+    
 }
 
 #container>#ham_burgur>#ham_burgur_icon {
@@ -241,11 +241,3 @@ meal plan panel end */
 
 
 /* navbar ends here */
-
-#nothing {
-
-    border: 10px solid black;
-    height: 10000px;
-    width: 90%;
-    background-color: red;
-}
