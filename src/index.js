@@ -28,8 +28,10 @@ function showslides(n){
 }
 
 
-
-
-
-
 //////////////////////              slide show ends here
+
+
+
+// client slideshow
+
+////slideshow is here
