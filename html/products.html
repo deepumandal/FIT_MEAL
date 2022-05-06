@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script
+      src="https://kit.fontawesome.com/e9a5a74c45.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <style> 
+    *{
+      font-family: sans-serif;
+    }
+
+        #product_head{
+            width: 100%;
+            height: 350px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white; 
+             background-color: 
+#292d35;  
+             
+            text-align: center;   
+            
+        } 
+        #product_head>h1{
+            padding-top: 150px;
+            font-family:sans-serif;  
+            font-size: 48px;
+            
+        }  
+
+        a{
+          text-decoration: none; 
+          font-size: 16px; 
+          line-height: 30px; 
+          color: black;
+          font-weight: 700;
+          font-family: sans-serif;
+        }  
+        a:hover{
+          color: #8ec038;
+          cursor: pointer;
+        }
+        #Innerside_box{
+          margin-left: 20px;
+        } 
+        #side_box >i{
+          color:#8ec038 ; 
+          padding-right: 5px;
+        } 
+        #Innerside_box >i{
+          color:#8ec038 ; 
+          padding-right: 5px;
+        } 
+        #side_box{
+          height: 400px;
+          width: 30%; 
+          margin-left: 10%;
+          
+          
+          
+        } 
+        #line{
+          width: 100%;
+          background-color: #8ec038;
+          height: 2px;
+          margin-top: -10px;
+        } 
+        #side_box >h1{
+          font-family: sans-serif;
+          font-size: 26px;
+          margin-top: 15%;
+
+        } 
+        hr{
+          background-color: rgb(226, 218, 218);
+          height: 1px;
+          border: none;
+        } 
+
+        #inputs{
+          height: 55px;
+          width: 22%;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          margin-left: 10%;
+          margin-top: 5%; 
+          border: 2px solid  rgb(243, 237, 237);
+          box-sizing: border-box;
+         
+        } 
+        input{
+         
+         margin-top: 15px; 
+          padding-left: 30px;
+          font-size: 16px;
+          border: none;
+        } 
+        #submit{
+          font-size: 20px; 
+          border: none; 
+          margin-left: 25px;
+      
+          
+        }  
+        #submit>i:hover{
+          cursor: pointer;
+          color: #8ec038;
+        } 
+        #sortdiv{ 
+          height: 58px;
+          width: 42%;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          border: 1px solid black; 
+          margin-top: 5%; 
+          margin-left: 80px;
+
+        } 
+        #outer_sortdiv{
+          display: flex;
+          
+          
+          
+        } 
+        #div>h1{
+         font-size: 18px;
+         font-family:  sans-serif;
+         font-weight: 400; 
+         margin-left: 25px;
+         margin-top: 18px;
+         color: #46484c;
+        } 
+        #sortdiv{
+          background-color: #f3f5ed; 
+          border: none;
+          display: flex;
+          
+        } 
+        #sort{
+          padding-top: 18px;
+          padding-left: 180px; 
+          
+        } 
+        #sort>select{
+          font-size: 17px;
+          font-family:  sans-serif;
+         font-weight: 400; 
+         text-decoration: none;
+         border: none;
+         background-color: #f3f5ed;
+        } 
+
+        #product_image{
+          height: 40%;
+          width: 80%;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px; 
+        } 
+        #product_image:hover{ 
+
+          -webkit-transform: scale(0.9);
+         -ms-transform: scale(0.9);
+           transform: scale(0.9);
+          transition: 1s ease;
+      
+          cursor: pointer;
+        }
+
+        #prod_div{
+          height: 500px;  
+          width: 300px;  
+          margin-bottom: 30px;
+          
+        } 
+        #mainbox{
+          display: flex; 
+          gap: 5%;
+        } 
+       #products{
+         display: grid; 
+         grid-template-columns: repeat(3,1fr); 
+         grid-template-rows: auto;
+         gap: 30px; 
+         margin-top: 30px;
+       } 
+       #reddiv{
+         height: 50px;
+         width: 60%; 
+         box-sizing: border-box;
+         background-color: red; 
+         border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          text-align: center; 
+           padding-top: 15px;
+          font-size: 17px;
+          font-weight: 700; 
+          color: white;
+          font-family: sans-serif ; 
+           margin-left: 20px;
+       } 
+
+      
+        p{
+          width: 55%;
+          line-height: 22px;
+          font-size: 14px;
+          text-align: center; 
+          margin-left: 30px;
+        } 
+        h3{
+         
+          margin-left: 80px; 
+          color: red;
+
+        } 
+        h2{
+          margin-left: 30px;
+          
+        } 
+        h4{
+          color: #8ec038;
+          margin-left: 75px;
+        } 
+        h4:hover{
+          cursor: pointer; 
+          color: black;
+        } 
+       
+        .fast{
+          margin-left: 20px;
+        }
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    } 
+
+
+
+    /* navbarcss */
+
+    #topbar {
+    width: 100%;
+    height: 39px;
+    background-color: white;
+   
+}
+
+#topbar>#prv_navbar {
+    width: 80%;
+ 
+    /* border: 1px solid black; */
+    height: 100%;
+
+}
+
+#topbar>#prv_navbar>div {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#topbar>#prv_navbar>div>h6 {
+    font-size: 15.5px;
+    font-family: Open-Sans, sans-serif;
+    font-weight: 400;
+    color: #292d35;
+    letter-spacing: 0.2px;
+    /* border: 1px solid teal; */
+    cursor: pointer;
+}
+
+#topbar>#prv_navbar>div>i {
+    /* border: 1px solid black; */
+    padding: 20px 9px 20px 9px;
+    font-size: 19px;
+    color: #80aa38;
+    cursor: pointer;
+} 
+
+/* onclick second product page */
+#diff_page{
+
+  display: flex;
+ 
+  height: 100px;
+  width: 30%;
+
+  margin-top: 8%;
+  margin-left: 45%;
+} 
+#diff_page>div{
+  width: 15%;
+  background-color:#f3f5ed;
+  height: 60%;
+  margin-left: 15px;
+  margin-top: 10px;
+ border-radius: 50%;
+ font-size: 18px;
+ text-align: center;
+ font-weight: 700;
+ line-height: 60px;
+ 
+
+}
+#diff_page>div:hover{
+  cursor: pointer;
+  background-color: #292d35;
+  color: white;
+}
+
+
+
+    </style>
+</head>
+<body>  
+
+
+  <div id="topbar">
+    <div id="prv_navbar">
+        <div>
+
+            <i class="fa-solid fa-location-dot"></i>
+            <h6>Food delivery only in Hyderabad</h6>
+            <i class="fa-solid fa-phone"></i>
+            <h6> 9100347480</h6>
+            <i class="fa-regular fa-envelope"></i>
+            <h6>fitmealsindia@gmail.com</h6>
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+    <div id="product_head"> 
+        <h1> Products</h1>
+    </div>   
+     <div id="outer_sortdiv">
+     <div id="inputs"><input type="text" placeholder="Search" id="input" ><button type="submit" id="submit"><i class="fa fa-search"></i></button> </div> 
+     
+    
+    <div id="sortdiv">
+      <div id="div"><h1>Showing 1–6 of 24 results</h1></div> 
+      <div id="sort"><select> 
+        <option>Default sorting</option>
+        <option>Sort by popularity</option>
+        <option>sort by average rating</option>
+        <option>sort by latest</option>
+        <option>sort by price: low to high</option>
+        <option>sort by price: high to low</option>
+      </select></div>
+    </div> 
+  </div>
+    
+    <div id="mainbox">
+    <div id="side_box"> 
+      <h1> Product categories</h1>
+      <div id="line"></div>
+      <i class="fas fa-angle-right dropdown"></i> <a href="">Diet Plans</a> <br> <hr>
+      
+      <i class="fas fa-angle-right dropdown"></i>  <a href="">Meal Plans</a><br> <hr>
+      <i class="fas fa-angle-right dropdown"></i> <a href="">Products</a> <br> <hr>
+      
+        <i  class="fas fa-angle-right dropdown fast"></i>  <a class="side" href="">Dishes</a><br> <hr>
+        <i   class="fas fa-angle-right dropdown  fast"></i> <a class="side" href="">Fresh Bakes</a><br> <hr>
+        <i  class="fas fa-angle-right dropdown  fast"></i>  <a class="side" href="">Low Calorie Sauces</a><br> <hr>
+        <i  class="fas fa-angle-right dropdown  fast"></i>  <a class="side" href="">Nut Butters</a><br><hr>
+        <i  class="fas fa-angle-right dropdown  fast "></i>  <a class="side" href="">Vegan Sweets</a> <br><hr>
+    </div>
+  
+      
+
+    <div id="products"></div> 
+   
+  </div> 
+
+  <div id="diff_page">
+    <div > 1 <a href="./secondprod.html"></a></div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div> 
+    <div>    <i class="fas fa-angle-right dropdown"></i></div>
+  </div>
+
+
+
+  
+    
+</body>
+</html>  
+<script>   
+
+
+ 
+
+  let Product_data=[ 
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/05/1-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹800.00"  
+
+    },
+
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹1200.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹220.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹250.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/05/2-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹800.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/23-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "₹550.00"  
+
+    }
+
+
+
+
+
+
+
+
+  ]   
+
+
+  Product_data.map(function( Product_data){ 
+
+    let box=document.querySelector("#products")
+      
+    let div=document.createElement("div")
+       div.setAttribute("id","prod_div")
+      let image=document.createElement("img")
+      image.src= Product_data.imgurl 
+      image.setAttribute("id" ,"product_image")
+
+      let prodName=document.createElement("h2")
+      prodName.innerText= Product_data.product_name
+
+      let discrip= document.createElement("p")
+      discrip.innerText=Product_data.discription 
+
+      let price=document.createElement("h3") 
+      price.innerText= Product_data.price   
+
+      let reddiv=document.createElement("div")
+      reddiv.innerHTML="Select Option" 
+      reddiv.setAttribute("id","reddiv") 
+      reddiv.addEventListener("click",function(){
+        myfun(Product_data)
+      })
+       
+      
+
+      let read=document.createElement("h4")
+      read.innerText="Read more" 
+      read.setAttribute("id","Read_more")
+
+
+      div.append(image,prodName,discrip,price,reddiv,read) 
+      
+      box.append(div)
+
+
+
+
+
+  })  
+
+
+
+  
+
+  function  myfun(Product_data){  
+    
+       localStorage.setItem("selected",JSON.stringify(Product_data));
+
+  window.location.href="prodAddToBag.html" 
+  }
+
+
+
+
+
+
+
+
+
+</script>
+
