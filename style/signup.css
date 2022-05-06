@@ -10,12 +10,37 @@ h1{
 }
 #detailsBox{
     margin: auto;
-    height: 300px;
-    width: 769px;
+    height: 500px;
+    width: 800px;
     border: 1px solid rgb(190, 189, 189);
     border-radius: 5px;
     padding: 22px 30px;
+    padding-bottom: 30px;
     margin-bottom: 50px;
+}
+#name p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+#name input{
+    width: 395px;
+    height: 48px;
+    /* padding: 22px 30px; */
+    padding-left: 20px;
+    background: white;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 599;
+    z-index: 3;
+    color: #292d35;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 35px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 20px;
 }
 #detailsBox>p{
     font-size: 14px;
@@ -37,7 +62,7 @@ h1{
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     background: white;
-    font-weight: 400;
+    font-weight: 590;
     z-index: 3;
     color: #292d35;
     border: 1px solid rgb(199, 197, 197);
@@ -52,30 +77,20 @@ h1{
     margin-top: 25px;
 }
 #detailsBox button{
-    height: 36px;
-    width: 125px;
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
     background-color: #DA2424;
-    padding: 7px 30px;
     color: white;
     border-radius: 25px;
     border: 0;
     margin-left: -10px;
     font-family: 'Fira Sans', sans-serif;
     cursor: pointer;
-}
-#detailsBox>div>input{
-    display: inline-flex;
-    margin-left: 30px;
-    margin-top: 12px;
-}
-#detailsBox>div>p{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgb(109, 109, 109);
-    margin-top: 9px;
-    margin-left: 5px;
+    margin-top: 20px;
 }
 body{
     margin: 0px;
@@ -84,14 +99,7 @@ body{
     width: 100%;
     /* position: absolute; */
     bottom: 534px;
-}
-#fixed{
-    width: 1200px;
-    border: 1px solid red;
-    margin: auto;
-    height: 600px;
-    z-index: 1000;
-    overflow: hidden;
+    margin-top: 100px;
 }
 footer{
     position: absolute;
@@ -214,4 +222,4 @@ footer h2+ul>li{
     color: #8ec038;
     font-size: 13px;
     font-weight: bold;
-}
+} 

@@ -8,42 +8,60 @@ body {
 #topbar {
     width: 100%;
     height: 39px;
+    border: 1px solid red;
+    display: flex;
 }
 
-#topbar>#prv_navbar {
-    width: 80%;
-    margin: auto;
+#prv_navbar{
+    width: 50%;
     /* border: 1px solid black; */
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
 }
 
-#topbar>#prv_navbar>div {
+#prv_navbar>div{
     display: flex;
     /* border: 1px solid red; */
     width: 70%;
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
+#prv_navbar>div:first-child{
+    margin-right: -50px;
+}
+#prv_navbar>div:last-child{
+    margin-left: -180px;
+}
 
-#topbar>#prv_navbar>div>h6 {
-    font-size: 15.5px;
+#prv_navbar>div>h6 {
+    font-size: 15px;
     font-family: Open-Sans, sans-serif;
     font-weight: 400;
     color: #292d35;
     letter-spacing: 0.2px;
     /* border: 1px solid teal; */
     cursor: pointer;
+    margin-left: 10px;
 }
 
-#topbar>#prv_navbar>div>i {
+#prv_navbar>div>i {
     /* border: 1px solid black; */
-    padding: 20px 9px 20px 9px;
+    /* padding: 20px 9px 20px 9px; */
     font-size: 19px;
     color: #80aa38;
     cursor: pointer;
+}
+
+#right_navbar{
+    width: 30%;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* navbar starts here */
