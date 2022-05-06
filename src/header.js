@@ -49,3 +49,6 @@ acc[1].addEventListener('click', function(){
 })            
 
 // this is the js code of  meal plan end here
+
+
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+
+    <style>  
+
+    *{
+        font-family:sans-serif ;
+    }
+
+     #bagroung_selected_food{
+
+        width: 100%;
+            height: 350px; 
+            max-height: 350px;
+            font-size: 48px;
+            font-weight: bold;
+            color: white; 
+             /* background-color: 
+#292d35;   */ 
+
+             
+            text-align: center;    
+            box-sizing: border-box; 
+        padding-top: 150px; 
+       
+            
+     } 
+     #head{
+         margin-top: 100px;
+     } 
+     #Selected_food{
+         margin-top: 100px;
+     } 
+     #product_image{
+         width: 420px;
+         height: 455px;
+         margin-left: 15%;
+     } 
+     #container{
+         display: flex;
+         margin: auto;
+     } 
+     #Selected_food_inf{
+         width: 400px;
+         margin-left: 100px;
+         margin-top: 100px;
+     }
+     #reddiv{
+        height: 50px;
+         width: 40%; 
+         box-sizing: border-box;
+         background-color: red; 
+         border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          text-align: center; 
+           padding-top: 15px;
+          font-size: 17px;
+          font-weight: 700; 
+          color: white;
+          font-family: sans-serif ; 
+           margin-left: 20px;
+           margin-top: 100px;
+     }
+     #reddiv:hover{
+         cursor: pointer;
+        
+         background-color:#8ec038 ;
+     } 
+
+
+
+
+
+    
+
+
+
+
+
+    </style>
+</head>
+<body>  
+
+   
+
+
+
+
+
+
+
+
+    <div id="bagroung_selected_food"></div> 
+    <div id="container">
+    <div id="Selected_food"></div> 
+    
+    <div id="Selected_food_inf">
+        
+    </div> 
+    
+  </div>
+    
+</body>
+</html>
+<script>  
+
+     
+
+   let el=JSON.parse(localStorage.getItem("selected"))
+  
+
+   
+ 
+
+        
+    // x.forEach(function(el){
+        select()
+        function select(){ 
+         
+        console.log(el)
+        let box=document.querySelector("#Selected_food")
+
+       let selected=document.querySelector("#bagroung_selected_food")
+       let urll=el.imgurl
+       selected.style.backgroundImage=`url(${urll}) `;
+       let info=document.querySelector("#Selected_food_inf")
+      
+    let div=document.createElement("div")
+       div.setAttribute("id","prod_div") 
+       div.style.backgroundImage=el.imgurl
+      let image=document.createElement("img")
+      image.src= el.imgurl 
+      image.setAttribute("id" ,"product_image")
+
+      let prodName=document.createElement("h2")
+     
+      prodName.innerText= el.product_name 
+      selected.innerText=el.product_name 
+      
+
+      let discrip= document.createElement("p")
+      discrip.innerText=el.discription 
+
+      let price=document.createElement("h3") 
+      price.innerText= el.price   
+      
+      
+
+      let reddiv=document.createElement("div")
+      reddiv.innerHTML="Add Cart" 
+      reddiv.setAttribute("id","reddiv") 
+      reddiv.addEventListener("click",function(){
+        myfun(el)
+      })
+
+      div.append(image) 
+      
+      box.append(div) 
+      info.append(price,discrip,reddiv)
+
+    }
+      function  myfun(cart_data){  
+    
+    localStorage.setItem("CartData",JSON.stringify(cart_data));
+
+
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+</script>
