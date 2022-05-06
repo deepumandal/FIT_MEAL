@@ -17,17 +17,25 @@ footer{
     display: flex;
     margin-top: -10px;
 }
-footer>div:first-child{
+#fixed{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 534px;
+    display: flex;
+}
+footer>#fixed>div:first-child{
     height: 100%;
     width: 30%;
     /* border: 1px solid teal; */
     box-sizing: border-box;
-    padding: 80px 140px 150px 70px;
+    padding: 80px 59px 83px 54px;
+    margin-left: 50px;
 }
-footer>div:first-child>img{
+footer>#fixed>div:first-child>img{
     cursor: pointer;
 }
-footer>div:first-child>p{
+footer>#fixed>div:first-child>p{
     color: #94979a;
     font-size: 14px;
     font-weight: 560;
@@ -38,14 +46,15 @@ footer>div:first-child>p{
 }
 #socials{
     width: 60%;
-    height: 35px;
-    /* border: 1px solid white; */
+    height: 30px;
+    /* border: 1px solid red; */
     display: flex;
 }
 #socials a{
     color: white;
 }
 #socials a:hover{
+transition: 1s;
     color: #292d35;
 }
 #socials>div{
@@ -62,23 +71,25 @@ footer>div:first-child>p{
     /* transform: rotate(x); */
 }
 #socials>div:hover{
+transition: 1s;
     background: white;
     color: #292d35;
 }
-footer>div:last-child{
+footer>#fixed>div:last-child{
     height: 100%;
-    width: 60%;
+    width: 70%;
     /* border: 1px solid teal; */
+    z-index: 155;
     display:flex;
 }
-footer>div:last-child>div{
+footer>#fixed>div:last-child>div{
     height: 100%;
     width: 30%;
     /* border: 1px solid red; */
     box-sizing: border-box;
-    padding: 80px 0px 150px 0px;
+    padding:80px 0px 187px 17px;
 }
-footer>div:last-child>div>div{
+footer>#fixed>div:last-child>div>div{
     margin-top: 30px;
 }
 footer h2{
@@ -94,6 +105,7 @@ footer h2+ul{
     font-size: 13px;
 }
 footer h2+ul>li:hover{
+transition: 1s;
     color: #8ec038;
     font-size: 13px;
     cursor: pointer;
@@ -121,6 +133,8 @@ footer h2+ul>li{
     font-weight: 100;
 }
 .contacts>i+div>p:hover{
+transition: 1s;
+    
     color: #8ec038;
 }
 .contacts>i+div>p:first-child{

@@ -8,8 +8,12 @@ body {
 #topbar {
     width: 100%;
     height: 39px;
+<<<<<<< HEAD
     border: 1px solid red;
     display: flex;
+=======
+    background-color: white;
+>>>>>>> 0258aeb3640717e8e319b2fa63d96b67fb4af0a5
 }
 
 #prv_navbar{
