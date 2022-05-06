@@ -3,19 +3,17 @@ body{
 }
 #img1{
     width: 100%;
-    position: absolute;
     bottom: 534px;
 }
 footer{
-    position: absolute;
-    bottom: 0px;
+    /* bottom: 0px; */
     /* margin-top: 200px; */
     height: 534px;
     width: 100%;
     /* border: 1px solid red; */
     background-color: #292d35;
     display: flex;
-    margin-top: -10px;
+    margin-top: 30px;
 }
 #fixed{
     /* border: 1px solid red; */
