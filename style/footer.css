@@ -54,7 +54,8 @@ footer>#fixed>div:first-child>p{
     color: white;
 }
 #socials a:hover{
-transition: 1s;    color: #292d35;
+transition: 1s;
+    color: #292d35;
 }
 #socials>div{
     width: 20%;
@@ -70,7 +71,8 @@ transition: 1s;    color: #292d35;
     /* transform: rotate(x); */
 }
 #socials>div:hover{
-transition: 1s;    background: white;
+transition: 1s;
+    background: white;
     color: #292d35;
 }
 footer>#fixed>div:last-child{
@@ -103,7 +105,8 @@ footer h2+ul{
     font-size: 13px;
 }
 footer h2+ul>li:hover{
-transition: 1s;    color: #8ec038;
+transition: 1s;
+    color: #8ec038;
     font-size: 13px;
     cursor: pointer;
 }
@@ -130,7 +133,8 @@ footer h2+ul>li{
     font-weight: 100;
 }
 .contacts>i+div>p:hover{
-transition: 1s;    
+transition: 1s;
+    
     color: #8ec038;
 }
 .contacts>i+div>p:first-child{
