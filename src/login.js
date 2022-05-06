@@ -1,0 +1,41 @@
+
+let data = JSON.parse(localStorage.getItem("signupDetails"));
+
+document.getElementById("login").addEventListener("click", function(){
+
+    let usernameLogin = document.getElementById("username").value;
+    let passwordLogin = document.getElementById("password").value;
+
+    let flag = false;
+
+    let loginArr = [];
+
+    for(let i=0; i<data; i++){
+
+        if((data[i].username == usernameLogin || data[i].email == usernameLogin) && data[i].password == passwordLogin){
+
+            let loginObj = {
+                name : data[i].username,
+                email : data[i].email,
+            };
+
+            loginArr.push(loginObj);
+
+            localStorage.setItem("loginDetails", JSON.stringify(loginObj));
+
+            flag = true;
+            break;
+        }
+    }
+
+    if(flag){
+
+        alert("Login successful.");
+
+        window.location.href = "../index.html";
+    }
+    else{
+
+        alert("Wrong username or password");
+    }
+})
