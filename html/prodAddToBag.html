@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>  
+    <title>Products-Bag</title> 
+    <link rel="icon" href="https://www.fitmeals.co.in/wp-content/uploads/2019/06/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>  
+    <style>   
+
+
 
     *{
         font-family:sans-serif ;
@@ -23,7 +27,7 @@
              /* background-color: 
 #292d35;   */ 
 
-             
+             background-color: #292d35;
             text-align: center;    
             box-sizing: border-box; 
         padding-top: 150px; 
@@ -44,11 +48,13 @@
      #container{
          display: flex;
          margin: auto;
+         background: white;
      } 
      #Selected_food_inf{
          width: 400px;
-         margin-left: 100px;
+         margin-left: -52%;
          margin-top: 100px;
+        
      }
      #reddiv{
         height: 50px;
@@ -65,22 +71,344 @@
           font-weight: 700; 
           color: white;
           font-family: sans-serif ; 
-           margin-left: 20px;
-           margin-top: 100px;
+          
+           margin-top: 380px;
      }
      #reddiv:hover{
          cursor: pointer;
         
          background-color:#8ec038 ;
      } 
+     
+     
+     /* #reddiv::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0%;
+        bottom: 0;
+        background-color: #8ec038;
+        z-index: -1;
+        border-radius: 50%;
+        transition: transform 500ms ease-in-out;
+        transform: scale(0);
+    }  */
+
+      #prod_inf{
+          margin-top: 250px;
+          margin-left: 150px;
+          width: 30%;
+          line-height: 33px;
+          
+      } 
+      #prod_inf>ul{
+         
+          margin-left: -340px;
+      }
+      #rating{
+          color: red;
+          margin-top: 80px;
+          margin-left: 100px;
+      }
+
+    #review{
+    color: gray;
+    font-size: 12px;
+     }
+    #review:hover{
+    color: #8ec038;
+    }
+
+     /* footer */
 
 
-
-
-
+     
+     #img1{
+    width: 100%;
+    position: absolute;
+    bottom: 534px;
+}
+footer{
     
+   
+    
+    height: 504px;
+   
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #292d35;
+    display: flex;
+
+    margin-top: 200px;
+}
+#fixed{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 534px;
+    display: flex;
+}
+footer>#fixed>div:first-child{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid teal; */
+    box-sizing: border-box;
+    padding: 80px 59px 83px 54px;
+    margin-left: 50px;
+}
+footer>#fixed>div:first-child>img{
+    cursor: pointer;
+    
+}
+footer>#fixed>div:first-child>p{
+    color: #94979a;
+    font-size: 14px;
+    font-weight: 560;
+    line-height: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#socials{
+    width: 60%;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+#socials a{
+    color: white;
+}
+#socials a:hover{
+transition: 1s;    color: #292d35;
+}
+#socials>div{
+    width: 20%;
+    height: 100%;
+    background: #8ec038;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    /* transform: rotate(x); */
+}
+#socials>div:hover{
+transition: 1s;    background: white;
+    color: #292d35;
+}
+footer>#fixed>div:last-child{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid teal; */
+    z-index: 155;
+    display:flex;
+}
+footer>#fixed>div:last-child>div{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding:80px 0px 187px 17px;
+}
+footer>#fixed>div:last-child>div>div{
+    margin-top: 30px;
+}
+footer h2{
+    font-family: 'Fira Sans', sans-serif;
+    color: #8ec038;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+footer h2+ul{
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+footer h2+ul>li:hover{
+transition: 1s;    color: #8ec038;
+    font-size: 13px;
+    cursor: pointer;
+}
+footer h2+ul>li{
+    margin-bottom: 15px;
+}
+.contacts{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.contacts>div{
+    margin-left: 10px;
+    margin-top: -12px;
+    line-height: 15px;
+}
+.contacts>i{
+    color: #8ec038;
+}
+.contacts>i+div>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 100;
+}
+.contacts>i+div>p:hover{
+transition: 1s;    
+    color: #8ec038;
+}
+.contacts>i+div>p:first-child{
+    color: #8ec038;
+    font-size: 13px;
+    font-weight: bold;
+} 
 
 
+
+#review_box{
+    height: 600px;
+    width: 55%;
+    background-color: #f3f5ed;
+    margin: auto;
+   padding-left: 30px;
+    border-radius: 30px;
+    margin-top: 80px;
+    border:none;
+    font-size: 15px;
+    font-weight: 700;
+}  
+#review_box>h2{
+    text-align: center;
+    line-height: 50px;
+  
+   
+}
+
+#review_box>input{
+    height: 60px;
+    border-radius: 30px;
+    width: 80%;
+    border:none;
+  
+}
+#add_review{
+    margin-top: -50px;
+    border:none;
+    
+}
+#add_review>input{
+    height: 150px;
+    width: 85%;
+    border-radius: 20px;
+    border:none;
+   
+}
+#add_review>h3{
+    padding-top: 50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    } 
+    
+  h2{
+      margin-left: 43%;
+      margin-top: 100px;
+  } 
+  #submit{
+     
+      height: 40px;
+      background-color: #8ec038;
+      color: white;
+    width: 150px;
+    margin-left: 35%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 700;
+  } 
+  #submit:hover{
+      background-color: #292d35;
+  }
+
+#related{
+    display: flex;
+    margin-left: 180px;
+  margin-top: -100px;
+}
+#related>div>img{
+    height: 350px;
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 35px;
+    margin-top: 120px;
+  
+}  
+
+#related>div>img:hover{ 
+
+-webkit-transform: scale(0.9);
+-ms-transform: scale(0.9);
+ transform: scale(0.9);
+transition: 0.5s ease;
+
+cursor: pointer;
+}
+
+#related>div{
+ margin-left: 20px;
+
+  
+}  
+
+#reddiv2{
+         height: 50px;
+         width: 50%; 
+         box-sizing: border-box;
+         background-color: red; 
+         border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          text-align: center; 
+           padding-top: 8px;
+          font-size: 17px;
+          font-weight: 700; 
+          color: white;
+          font-family: sans-serif ; 
+           margin-left: 140px;
+           border: none;
+          
+       }  
+       #reddiv2:hover{
+            background-color: #8ec038;
+       }
+      #related>div>h3{
+           font-size: 24px;
+           color: red;
+           font-weight: 700;
+           margin-left: 200px;
+           line-height: 10px;
+       } 
+#related>div>h2{
+    margin-top: -0.5px; 
+    font-size: 23px;
+    font-weight: 700;
+   
+}
+h1{
+    margin-left: 45%;
+    margin-top: 200px
+    
+}
 
 
 
@@ -100,12 +428,141 @@
     <div id="bagroung_selected_food"></div> 
     <div id="container">
     <div id="Selected_food"></div> 
-    
-    <div id="Selected_food_inf">
-        
+    <div id="rating">
+
+        <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>
+       <span class="fa fa-star"></span> 
+       <span id="review">(1 customer review)</span>
+    </div>
+    <div id="prod_inf">
+      
+        <ul>
+            <li>100% Natural Almond Butter, Ingredients: 100% Roasted Almonds and absolutely nothing else, no refined sugar and no preservatives</li>
+            <li>Vegan. Gluten free. Zero Cholesterol. No Trans fats, Keto friendly – high in healthy fats, no sweeteners</li>
+            <li>Almonds contain antioxidants from Vitamin E and have the nutrition of Magnesium to promote heart health.</li>
+            <li>Suitable for pre & post workout, for gym goers, the fitness conscious and runners</li>
+        </ul>
+    </div>
+    <div id="Selected_food_inf"> 
+       
     </div> 
+</div>  
+  <!-- reviw box /////////////////////////////-->
+
+
+  <h2>Add a review</h2>
+  <div id="review_box">
+
     
+    <div id="add_review" >
+        <h3>Your review*</h3>
+    <input type="text" >
+    </div>
+    <h3>Name*</h3>
+    <input type="text">
+    <h3>Email*</h3>
+    <input type="text" ><br>
+    <button id="submit">Submit</button>
   </div>
+  
+  <h1>Related products</h1>
+  <div id="related"> 
+    
+      <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-550x550.jpg" />
+        <h2>Almond Butter</h2>
+        <h3>₹800</h3>
+        <button id="reddiv2">Select Option</button>
+     </div>
+      <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/28-550x550.jpg" />
+        <h2>Almond Butter</h2>
+        <h3>₹1100</h3>
+        <button id="reddiv2">Select Option</button>
+       </div>
+      <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/2-550x550.jpg" />
+        <h2>Almond Butter</h2>
+        <h3>₹900</h3>
+
+        <button id="reddiv2">Select Option</button>
+        </div>
+      
+  </div>
+
+
+  <footer>
+    <div id="fixed">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" />
+            <p>
+                The Fitmeals culinary team consists of very passionate and skilled chefs.
+                Our team is well versed in nutrition and all our menus and plans are designed
+                by qualified nutrition experts.
+            </p>
+            <div id="socials">
+                <div>
+                    <a href="https://twitter.com/fitmealsindia" target="blank">
+                        <i id="twitter" class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/fitmealsindia/?fref=ts" target="blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/fitmealsindia/" target="blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Meals</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>FAQ</li>
+                    <li>Testimonials</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contacts</h2>
+                <div class="contacts">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>Call Us :</p>
+                        <p>9100347480</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <p>Email Us :</p>
+                        <p>fitmealsindia@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <div>
+                        <p>Our Location</p>
+                        <p>Banjara Hills, Road no.5, Hyderabad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
     
 </body>
 </html>
@@ -129,7 +586,7 @@
 
        let selected=document.querySelector("#bagroung_selected_food")
        let urll=el.imgurl
-       selected.style.backgroundImage=`url(${urll}) `;
+    //    selected.style.backgroundImage=`url(${urll}) `;
        let info=document.querySelector("#Selected_food_inf")
       
     let div=document.createElement("div")
@@ -151,7 +608,8 @@
       let price=document.createElement("h3") 
       price.innerText= el.price   
       
-      
+      div2=document.createElement("div")
+
 
       let reddiv=document.createElement("div")
       reddiv.innerHTML="Add Cart" 
@@ -163,7 +621,11 @@
       div.append(image) 
       
       box.append(div) 
-      info.append(price,discrip,reddiv)
+      div2.append(price,discrip,reddiv)
+
+      info.append(div2)
+     
+
 
     }
       function  myfun(cart_data){  
