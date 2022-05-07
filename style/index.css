@@ -11,6 +11,8 @@ slideshow css starts here */
 
 /* 
 slide show starts here */
+
+
 #demo {
     /* border: 1px solid red; */
     height: auto;
@@ -48,6 +50,9 @@ slide show starts here */
     top: 20px;
     left: 10%;
     right: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #elementtwo>h1 {
@@ -90,6 +95,188 @@ slide show starts here */
     ;
 
 }
+
+/* this is btn animation */
+
+#elementtwo>button {
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #8ec038;
+  
+    color: rgb(255, 255, 255);
+ }
+ #elementtwo>button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+ }
+ #elementtwo>button:hover::before,
+ #elementtwo>button:focus::before{
+     color: #222;
+    transform: scale(1.5);
+ }
+ #elementtwo>button:hover,
+ #elementtwo>button:focus{
+     transition: 500ms;
+     color: #8ec038;
+ }
+ 
+ #elementtwo>button{
+    z-index: 1;
+    overflow: hidden;
+ }
+
+/* 2 */
+
+#elementthree>#button>button:nth-child(1) {
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+ }
+ #elementthree>#button>button:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #fafafa;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+ }
+ #elementthree>#button>button:nth-child(1):hover::before,
+ #elementthree>#button>button:nth-child(1):focus::before{
+    transform: scale(1.5);
+ }
+ 
+ #elementthree>#button>button:nth-child(1){
+    z-index: 1;
+    overflow: hidden;
+ }
+ #elementthree>#button>button:nth-child(1):hover,
+ #elementthree>#button>button:nth-child(1):focus{
+     transition: 500ms;
+     color: #8ec038;
+ }
+ 
+
+
+/* btn 2 */
+#elementthree>#button>button:nth-child(2) {
+   
+ 
+ 
+  
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+ }
+ #elementthree>#button>button:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #fafafa;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+ }
+ #elementthree>#button>button:nth-child(2):hover::before,
+ #elementthree>#button>button:nth-child(2):focus::before{
+    transform: scale(1.5);
+ }
+ #elementthree>#button>button:nth-child(2):hover,
+ #elementthree>#button>button:nth-child(2):focus{
+     transition: 500ms;
+     color: #8ec038;
+ }
+ 
+
+ #elementthree>#button>button:nth-child(2){
+    z-index: 1;
+    overflow: hidden;
+ }
+ 
+/* 3 */
+
+
+#Download {
+   
+ border: 1px solid red;
+ margin: auto;
+ 
+  
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+ }
+ #Download::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #fafafa;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+ }
+ #Download:hover::before,
+ #Download:focus::before{
+    transform: scale(1.5);
+ }
+ 
+ #Download{
+    z-index: 1;
+    overflow: hidden;
+ }
+ 
+
+
+/* 
+this is animation btn ends */
+
+
+
+
+
+
+
+
+
 
 .animation_ {
     object-fit: cover;
@@ -194,7 +381,7 @@ slide show starts here */
     /* border:  1px solid red; */
     text-align: center;
     padding: 16px 30px;
-    margin: 90px 346px;
+    margin-top: 170px;
     border-radius: 35px;
     letter-spacing: 1px;
     border: none;
@@ -811,7 +998,7 @@ so why chose fitmeals */
 
 @keyframes flipimage {
     100% {
-        transform: rotateY(360deg);
+        transform: rotateY(360deg) ;
     }
 }
 
@@ -1826,57 +2013,183 @@ btn animation stars here */
 
 /* 3 */
 
-/* 
 
-#button1,#button2,#button3,#button4 {
-  
-    
-    padding: 1em 5em;
+.btnhoverone{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 9px 35px 9px 35px;
+    border-radius: 20px;
     border: none;
+    background-color: #da2424;
+    color: white;
+    letter-spacing: 0.5px;
+
+
+    
+   
     outline: none;
     position: relative;
     cursor: pointer;
-    margin: 100px 100px;
+ 
     z-index: 1;
     background-color: #da2424;
-    border-radius: 49px;
+   
     color: rgb(255, 255, 255);
 }
 
-#button1,#button2,#button3,#button4::before {
+.btnhoverone::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: #292d35;
     z-index: -1;
     border-radius: 48%;
     transition: transform 500ms ease-in-out;
     transform: scale(0);
 }
 
-#button1,#button2,#button3,#button4:hover::before,
-#button1,#button2,#button3,#button4:focus::before {
+.btnhoverone:hover::before,
+.btnhoverone:focus::before {
     transform: scale(1.5);
 }
 
-#button1,#button2,#button3,#button4 {
+.btnhoverone{
     z-index: 1;
     overflow: hidden;
-} */
+} 
+
+
+/* 4 */
+
+#ordernowki {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 12px 35px 12px 35px;
+    border-radius: 20px;    
+    color: white;
+    letter-spacing: 0.5px;
+    
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+}
+#ordernowki::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #8ec038;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+}
+#ordernowki:hover::before,
+#ordernowki:focus::before{
+    transform: scale(1.5);
+}
+
+#ordernowki{
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+/* 5 */
+
+#ultimatedite {
+   
+ 
+ 
+  
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+}
+#ultimatedite::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #8ec038;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+}
+#ultimatedite:hover::before,
+#ultimatedite:focus::before{
+    transform: scale(1.5);
+}
+
+#ultimatedite{
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* 6 */
 
 
 
 
-
-
-
-
-
-
-
+#Subscribebtn {
+   
+ 
+ 
+  
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  
+    z-index: 1;
+    background-color: #da2424;
+  
+    color: rgb(255, 255, 255);
+ }
+ #Subscribebtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background-color: #292d35;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+ }
+ #Subscribebtn:hover::before,
+ #Subscribebtn:focus::before{
+    transform: scale(1.5);
+ }
+ 
+ #Subscribebtn{
+    z-index: 1;
+    overflow: hidden;
+ }
 
 
 
@@ -2079,4 +2392,37 @@ footer h2+ul>li {
     color: #8ec038;
     font-size: 13px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1204px) {
+
+/* navbar edits here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
