@@ -49,16 +49,32 @@
             </div>
 
             <div id="sidepannel">
+<script>
+//    count=0
+// if(window.matchMedia('(max-width:1209px)').matches && count>0)
+// {
+//     let sidepanel =document.querySelector("#sidepannel")
+//     sidepanel.style.transition = '0.7s'
+//     count++
+//     console.log(count)
+// }
+// if(window.matchMedia('(min-width:1204px)').matches){
+//     count=0
+//     console.log(count)
+// } 
+ 
+
+</script>
 
                 <div id="sidebar_top">
                     <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
                         onclick="window.location.href ='index.html'" alt="">
-                    <a class="closebtn" onclick="closeNav()">×</a>
+                    <a class="closebtn" onclick="closeNav()">×</a> 
                 </div>
                 <div id="sidebar_bottom">
 
                     <div id="home" onclick="window.location.href='index.html'">Home</div>
-                    <div class="arrow" id="no1">
+                    <div class="arrow" id="arrow1" id="no1">
                         <div id="Meal_Plans">Meal Plans</div>
                         <div class="arrow_mark">></div>
                     </div>
@@ -67,7 +83,7 @@
                         <div class="accordance">
                             <div class="accordance_meal">
                                 <div>></div>
-              <div>Weight Loss Meal Plan</div>
+                                <div>Weight Loss Meal Plan</div>
 
                             </div>
                         </div>
@@ -103,18 +119,36 @@
 
 
 
-                    <div id="Health_coaching">Health coaching</div>
+                    <div id="Health_coaching" onclick="">Health coaching</div>
 
-                    <div class="arrow" id="no1">
+                    <div class="arrow" id="arrow2" id="no1">
                         <div id="Products">Products</div>
                         <div class="arrow_mark">></div>
-                    </div>
-                    <div id="Blog">Blog</div>
-                    <div class="arrow" id="no1">
 
-                        <div id="About_Us">About Us</div>
+                    </div>
+                    <div id="productsdata">
+                        <div>Veg Sweets</div>
+                        <div>Low Cal Sauces</div>
+                        <div>Nut Butter</div>
+                        <div>Fresh Bekes</div>
+                    </div>
+
+
+
+
+                    <div id="Bog" class="blog"  >Blog</div>
+                    <div class="arrow" id="arrow3" id="no1">
+
+                        <div id="About_Us" >About Us</div>
                         <div class="arrow_mark">></div>
                     </div>
+                    <div id="aboutsdata">
+                       
+                        <div>Ours Story</div>
+                        <div>FAQ</div>
+                        <div>Testimonials</div>
+                    </div>
+
                     <div id="Call">Call: 9100347480</div>
                     <hr>
                 </div>
@@ -176,7 +210,7 @@
                 <div id="elementfour">
                     <h1>fitmeals app is now live!</h1>
                     <p>Get easy access to healthy recipes workout plans nutrition consuitations and weekly menus.</p>
-                    <button>Download now</button>
+                    <button id="Download">Download now</button>
                 </div>
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg" alt="New York"
                     class="animation_" class="d-block" style="width:100%">
@@ -287,7 +321,7 @@
                         weight requirements. With a new changing menu every week, we bring to you food from various
                         cuisines, with a healthy twist. We make healthy eating fun and effortless!</p>
 
-                    <button>Read More</button>
+                    <button id="animateone">Read More</button>
                 </div>
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/health-bottle-cut.jpg" alt="">
                 <div id="secound_list">
@@ -422,7 +456,7 @@ why chose fit meals -->
                         your requirements. The meals are well balanced and consist of complex carbohydrates, lean
                         protein, healthy fats and generous portions of fruits and vegetables which add all the essential
                         vitamins, minerals and fibre to your diet.</p>
-                    <button>view plan</button>
+                    <button class="btnhoverone">view plan</button>
                 </div>
 
 
@@ -440,7 +474,7 @@ why chose fit meals -->
                         your requirements. The meals are well balanced and consist of complex carbohydrates, lean
                         protein, healthy fats and generous portions of fruits and vegetables which add all the essential
                         vitamins, minerals and fibre to your diet.</p>
-                    <button>view plan</button>
+                    <button class="btnhoverone">view plan</button>
                 </div>`
                     let secound = ` <div id="btn_image">
                     <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/maintenance.jpg" alt="">
@@ -452,7 +486,7 @@ why chose fit meals -->
                         simultaneously burning fat to ensure you stay in shape. This plan includes high protein meals
                         for individuals who want to gain weight or build muscle. If you are a fitness enthusiast who’s
                         looking for meals higher in calories and lean protein then we’ve got you covered.</p>
-                    <button>Learn more</button>
+                    <button class="btnhoverone">Learn more</button>
                 </div>`
 
                     let third = `
@@ -468,7 +502,7 @@ why chose fit meals -->
                         meals have moderately portioned macros and micros.
                     </p>
 
-                    <button>view plan</button>
+                    <button class="btnhoverone">view plan</button>
                 </div>
                 `
                     let four = `<div id="btn_image">
@@ -484,7 +518,7 @@ why chose fit meals -->
                         called ketosis where your body fat is then used to generate energy in the body.
                     </p>
 
-                    <button>Learn more</button>
+                    <button class="btnhoverone">Learn more</button>
                 </div>`
 
                     function return_data_btn(x) {
@@ -539,7 +573,7 @@ why chose fit meals -->
         <div>
             <h1>Not convinced yet?</h1>
             <h1>Get our <span> 1 week trial plan</span></h1>
-            <button>order now</button>
+            <button id="ordernowki">order now</button>
         </div>
 
     </div>
@@ -565,7 +599,7 @@ why chose fit meals -->
                 <p>Say goodbye to crash diets and give us the opportunity to create highly tailored plans that suit your
                     body type and food preferences distinctively. Just give us your details and goals and we’ll do all
                     the meal planning for you!</p>
-                <button>Learn more</button>
+                <button id="ultimatedite">Learn more</button>
             </div>
             <div id="diet_image">
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/02/dish_07-1-360x360-1.jpg" alt="">
@@ -861,7 +895,7 @@ why chose fit meals -->
         </p>
         <div id="subscribe">
             <input type="email" name="" placeholder="Your email..." id="email">
-            <button>Subscribe</button>
+            <button id="Subscribebtn">Subscribe</button>
         </div>
     </div>
 
@@ -922,11 +956,7 @@ why chose fit meals -->
                 </div>
             </div>
             <div id="endbtn">
-                <button>
-                    
-                        Read
-                        
-                        more</button>
+                <button class="Read">Read more</button>
             </div>
         </div>
     </div>
