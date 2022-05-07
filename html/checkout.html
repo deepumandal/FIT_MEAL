@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../style/checkout.css">
+    
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <div >
+        <img src="../svg/checkout.png.png" alt="">
+    </div>
+
+    <div id="main_page">
+        <div class="top">Returning customer? <span><a href="login_fitmeals.html">Click here to login</a></span></div>
+
+        <div class="top">Have a coupon? <span><a href="login_fitmeals.html">Click here to enter your code</a></span></div>
+    <h1>Billing details</h1>
+      <div id="container">
+          <form id="form1">
+            <h4>First Name<span>*</span></h4>
+            <input type="text" required/>
+            <h4>Last Name<span>*</span></h4>
+            <input type="text" required/>
+            <h4>Company Name (optional)</h4>
+            <input id="company_name" type="text" required/>
+            <h4>Country / Region<span>*</span></h4>
+            <h4 id="country">India</h4>
+            <h4>Street Adress<span>*</span></h4>
+            <input id="street" type="text" placeholder="House number and street name" required/>
+            <input type="text" placeholder="Apartment, suite, unit, etc. (optional)" required/>
+            <h4>Town / City<span>*</span></h4>
+            <input id="city" type="text" required/>
+            <h4>State<span>*</span></h4>
+            <select id="state" required>
+                <option value="Telangana">Telangana</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Andhra">Andhra Pradesh</option>
+                <option value="Arunachal">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chattisgarh">Chhattisgarh</option>
+                <option value="Dadra">Dadra and Nagar Haveli</option>
+                <option value="Daman">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal">Himachal Pradesh</option>
+                <option value="Jammu">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+            <h4>PIN<span>*</span></h4>
+            <input id="pin" type="number" required/>
+            <h4>Phone<span>*</span></h4>
+            <input id="phone" type="number" required/>
+            <h4>Email adress<span>*</span></h4>
+            <input id="pass" type="password" required/>
+          </form>
+          <div id="right">
+            <div id="shipto" class="checkit">
+                    <input type="checkbox" class="check" name="check">
+                    <label class = "lab" for="check"><h4>Ship to different adress</h4></label>
+                </div>
+                <div id="create_acc" class="checkit">
+                    <input type="checkbox" class="check" name="check">
+                    <label class="lab" for="check"><h4>Create an account?</h4></label>
+                </div>
+                <h4 id="order_note">Order notes (optional)</h4>
+                <textarea id="tarea" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+            </div>
+        </div>
+        <h1>Your Order</h1>
+        <div id="table">
+            <table class="table1">
+                <thead>
+                    <tr class="head">
+                        <th id="pro">Product</th>
+                        <th id="sub">subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <table class="table2">
+                <tr>
+                    <td class="total">Subtotal</td>
+                    <td class="price" id="subtotal">₹0</td>
+                </tr>
+                <tr>
+                    <td class="total">Discount<span>(30% off)</span></td>
+                    <td class="price" id="discount">₹0</td>
+                </tr>
+                <tr>
+                    <td class="total">Shipping</td>
+                    <td class="price" id="shipping">₹0</td>
+                </tr>
+                <tr>
+                    <td class="total">Total</td>
+                    <td class="price" id="total">₹0</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pay">
+            <div class="payoption">
+                <input  type="radio" class="click" name="payments" value="cod">
+                <h4 style="margin-top: 10px;">Cash on Delivery: Pay on the first day of your meals.</h4>
+            </div>
+            <div class="payoption">
+                <input type="radio" class="click" name="payments" value="payumoney">
+                <h4 style="margin-top: 0;">PayUmoney <span><img src="https://www.fitmeals.co.in/wp-content/plugins/PUM_WooCommerce_v3.4-master/images/payumoney.png" style="height: 25px"></span></h4>
+            </div>
+        </div>
+        <div id="terms" class="payoption">
+            <input  type="checkbox" class="click" style="width: 15px;" required>
+            <h4 style="margin-top: 10px;">I have read and agree to the website terms and conditions <span>*</span></h4>
+        </div>
+        <input id="sbmt" type="submit" value="Place Order">
+    </div>
+   
+</body>
+</html>
+<script src="../src/checkout.js"></script>
