@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+        img{
+        width: 100%;
+        height: 350px;
+
+    }
+h1 {
+color: #292d35;
+margin: 0 20%;
+font-size: 40px;
+}
+#title {
+font-size: 50px;
+text-align: center;
+color: white;
+margin: 90px 0;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(92, 91, 91);
+  margin: 2% 10% 1% 2%;
+  font-size: 90%;
+}
+#main_page {
+  width: 100%;
+  padding: 40px 0;
+  background-color: white;
+  border: apx solid red;
+}
+#title_div {
+height: 250px;
+background-image: linear-gradient(
+    100deg,
+    rgba(60, 60, 78, 0.7),
+    rgba(38, 38, 61, 0.5)
+  ), url("https://motionarray.imgix.net/preview-851372-ficpAbLmbG0WTger-large.jpg?w=1400&q=60&fit=max&auto=format");
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-size: 100%;
+width: 100%;
+padding: 40px 0;
+}
+#container {
+margin: auto;
+width: 60%;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+#form1 {
+  width: 45%;
+  
+  display: inline-block;
+}
+#form1>input{
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid red ; */
+}
+input, select {
+display: block;
+width: 100%;
+margin: 0 5% 5% 0;
+height: 40px;
+padding: 10px 4%;
+font-size: medium;
+border-radius: 50px;
+border: 1px solid rgb(220, 220, 220);
+}
+span {
+  color: red;
+  margin-left: 3px;
+}
+#country {
+  text-align: center;
+  color: black;
+  margin: 25px 0;
+}
+select {
+  height: 50px;
+  width: 108%;
+}
+.checkit {
+  display: flex;
+  height: 20px;
+  padding: 10px;
+}
+.check {
+  margin: 0;
+  width: 15px;
+}
+.lab {
+    height: 10px;
+    margin: 5px 5px;
+    width: 100%;
+}
+#right {
+    width: 45%;
+    margin-top: 0;
+    padding: 0;
+}
+#tarea {
+    width: 100%;
+    border-radius: 25px;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid rgb(220, 220, 220);
+}
+#order_note {
+    margin-top: 40px;
+}
+.top {
+    padding: 20px 20px;
+    font-size: small;
+    margin: 30px auto;
+    color: rgb(113, 107, 107);
+    background-color: #f7f7f8;
+    border-radius: 50px;
+    width: 60%;
+}
+a {
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+    transition: color .5s;
+}
+a:hover {
+    color: #8ec038;
+}
+
+thead {
+    
+    /* border: 1px solid red; */
+    background-color: #292d35;
+    color: white;
+    height: 60px;
+    font-family: 'Fira Sans', serif;
+    font-family: var(--font-headers), serif;
+    font-weight: 700;
+    font-size: 18px;
+    
+   
+}
+
+th, td {
+   
+    
+    padding: 20px 20px;
+    text-align: left;
+    font-size: large;
+   
+}
+th {
+    font-size: larger;
+    
+}
+td {
+    border: 1px solid rgb(220, 220, 220);
+    font-weight: 600;
+    font-size: medium;
+    
+}
+.table1 {
+   
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    border-bottom: 3px solid #292d35;
+    
+}
+.price {
+    width: 150px;
+}
+.table2 {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 0;
+    
+}
+.total {
+    text-align: right;
+    border: none;
+}
+.payoption {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.payoption > h4 {
+    margin: 8px 10px;
+}
+.click{
+    width: 20px;
+    margin: 0;
+}
+#pay {
+    width: 60%;
+    margin: auto;
+}
+#terms {
+    width: 60%;
+    margin: auto;
+}
+input[type="radio"] {
+    background-color: black;
+}
+input[type="submit"] {
+    background-color: #8ec038;
+    color: white;
+    width: 20%;
+    margin: 20px 0 0 20%;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background-color: #292d35;
+}
+#discount {
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width:0px) and (max-width: 400px) {
+h1 {
+    margin: 30px 0 0 2%;
+}
+#form1 {
+    width: 94%;
+}
+input {
+    height: 55px;
+    width: 95%
+}
+select {
+    width: 106%
+}
+#container {
+    width:94%;
+    display: block;
+} 
+.top {
+    width: 94%;
+}
+.lab {
+    margin-top: 0;
+}
+#right {
+    width: 90%;
+    margin-top: 0;
+    padding: 0;
+}
+#table {
+    margin-top: 0px;
+   
+}
+.table1 {
+    width: 93%;
+    margin: auto;
+    border-collapse: collapse;
+    
+}
+.table2 {
+    border-collapse: collapse;
+    width: 93%;
+    margin: auto;
+}
+.price {
+    width: 80px;
+}
+#pay {
+    width: 96%;
+    margin-left: 2%;
+}
+#terms {
+    width: 96%;
+    margin: auto;
+}
+#terma > h4 {
+    margin-top: 0;
+}
+input[type="submit"] {
+    width: 93%;
+    margin: 20px auto;
+    height: 40px;
+}
+}
+@media only screen and (min-width:401px) and (max-width: 1000px) {
+h1 {
+    margin: 30px 0 0 2%;
+}
+#form1 {
+    width: 96%;
+}
+input {
+    height: 35px;
+    width: 98%
+}
+select {
+    width: 106%
+}
+.top {
+    width: 90%;
+}
+#container {
+    margin:auto;
+    width:94%;
+    display: block;
+} 
+.lab {
+    margin-top: 0;
+}
+#right {
+    width: 94%;
+    margin-top: 0;
+    padding: 0;
+}
+.table1 {
+    width: 96%;
+    margin: auto;
+    border-collapse: collapse;
+    
+
+}
+.table2 {
+    border-collapse: collapse;
+    width: 96%;
+    margin : auto
+    
+}
+#pay {
+    width: 96%;
+    margin: auto;
+}
+#terms {
+    width: 96%;
+    margin: auto;
+}
+input[type="submit"] {
+    width: 96%;
+    margin: 20px auto;
+    height: 50px;
+}
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+}
+.head>#sub{
+    /* background-color: red; */
+    border-top-right-radius: 30px;
+    /* border-bottom-right-radius: 20px; */
+}
+.head>#pro{
+    border-top-left-radius: 30px 30px;
+}
