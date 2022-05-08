@@ -1,0 +1,29 @@
+button{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    cursor: pointer;
+}
+#item{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 85px;
+    right: 54px;
+    cursor: pointer;
+    z-index: 1;
+}

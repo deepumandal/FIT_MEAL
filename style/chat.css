@@ -1,0 +1,50 @@
+
+#chat{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+#chat>button:first-child{
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 125, 252);
+    background: linear-gradient(135deg, rgb(255, 78, 111), rgb(251, 145, 104));
+    box-shadow: rgb(255 78 111 / 50%) 0px 2px 16px;
+}
+#chat>button:first-child>i{
+    cursor: pointer;
+    color: white;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chat>button:first-child:hover{
+    background: white;
+}
+#bg{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor:pointer;
+    height: 42px;
+    width: 157px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 17px;
+    background: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    color: #06132B;
+}
+#chat>button>i:hover{
+    color: rgb(65, 190, 253);
+}
