@@ -1853,7 +1853,7 @@ manual
 
 #endbtn {
     margin: auto;
-    /* border:1px solid red; */
+    /* border: 1px solid red; */
     width: 100%;
     height: fit-content;
     z-index: 500;
