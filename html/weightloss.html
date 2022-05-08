@@ -5,322 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Loss Meal Plan</title>
+<link rel="stylesheet" href="weightloss.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+  rel="stylesheet"
+/>
 </head>
-<style>
-     #container1{
-        border:1px solid black;
-        height:400px;
-        width:100%;
-        margin:auto
-    }
-    #container2{
-        border:1px solid black;
-        height:500px;
-        width:100%;
-        margin: auto;
-        display: flex;
-        margin-top: 60px;
-        background-color: rgb(218, 215, 215);
-        
-    }
-    #box1{
-        border:1px solid black;
-        height:500px;
-        width:60%;
-        margin: auto;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    #boxa{
-        border:1px solid black;
-        height:180px;
-        width:90%;
-        margin: auto;
-        box-sizing: border-box;
-
-    }
-    #boxb{
-        border:1px solid black;
-        height:180px;
-        width:90%;
-        margin: auto;
-        box-sizing: border-box;
-
-    }
-    #box1 > button{
-       background-color: #E91E63; 
-       border: none;
-       padding:10px,15px,10px,15px;
-       color:#FFFFFF;
-       margin-top: 40px;
-       height:70px;
-       padding: 8px 20px;
-       margin-left: 40px;
-       font: 1em sans-serif;
-       
-    }
-    #box1 > button:hover{
-        background-color: rgb(55, 53, 53);
-    }
-    p{
-        font-size:20px;
-    }
-    #box2{
-        border:1px solid black;
-        height:500px;
-        width:40%;
-        margin: auto;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    #box2 > h2{
-        font-style:italic;
-        text-align: center;
-        color:black;
-    }
-    h2{
-        font-style: italic;
-        text-align: center;
-       margin-bottom: -40px;
-       color:#8EC038
-    }
-    #container3{
-        border:1px solid black;
-        height:400px;
-        width:100%;
-        margin:auto;
-        display: flex;
-        margin-top: 60px;
-
-    }
-    #boxc{
-        border:1px solid black;
-        height:350px;
-        width:25%;
-        margin:auto;
-        padding: 15px;
-        text-align: center;
-
-    }
-    #boxd{
-        border:1px solid black;
-        height:350px;
-        width:25%;
-        margin:auto;
-        padding: 15px;
-        text-align: center;
-
-    }
-    #boxe{
-        border:1px solid black;
-        height:350px;
-        width:25%;
-        margin:auto;
-        padding: 15px;
-        text-align: center;
-
-    }
-    #boxf{
-        border:1px solid black;
-        height:350px;
-        width:25%;
-        margin:auto;
-        padding: 15px;
-        text-align: center;
-    }
-    #container4{
-        border:1px solid black;
-        height:550px;
-        width:100%;
-        margin:auto;
-        display: flex;
-        margin-top: 60px;
-        background-color:#8EC038;
-    }
-    #container4 > h1{
-        margin-top: 100px;
-        text-align: left;
-        padding-top: 8%;
-        font-size: 50px;
-        
-    }
-    
-    #box3{
-        border:1px solid black;
-        height:400px;
-        width:40%;
-        margin:auto;
-        padding: 15px;
-        border-radius: 15px;
-        background-color: #FFFFFF;
-        margin-right: 20px;
-        
-
-    }
-    #box4{
-        border:1px solid black;
-        height:400px;
-        width:40%;
-        margin:auto;
-        padding: 15px;
-        border-radius: 15px;
-        background-color: #FFFFFF;
-        margin-right: 20px;
-       
-       
-
-    }
-    #box5{
-        border:1px solid black;
-        height:400px;
-        width:40%;
-        margin:auto;
-        padding: 15px;
-        border-radius: 15px;
-        background-color: #FFFFFF;
-        margin-right: 20px;
-       
-        
-
-    }
-    #box3  > button{
-       background-color: #E91E63; 
-       border:#E91E63;
-       border-radius: 20px;
-       padding:10px,15px,10px,15px;
-       color:#FFFFFF;
-       margin-top: 20px;
-       height:60px;
-       padding: 8px 20px;
-       margin-left: 70px;
-       font: 1em sans-serif;
-       
-    }
-    #box3 > button:hover{
-        background-color: rgb(55, 53, 53);
-    }
-    #box4  > button{
-       background-color: #E91E63; 
-       border:#E91E63;
-       border-radius: 20px;
-       padding:10px,15px,10px,15px;
-       color:#FFFFFF;
-       margin-top: 20px;
-       height:60px;
-       padding: 8px 20px;
-       margin-left: 70px;
-       font: 1em sans-serif;
-       
-    }
-    #box4 > button:hover{
-        background-color: rgb(55, 53, 53);
-    }
-    #box5  > button{
-       background-color: #E91E63; 
-       border:#E91E63;
-       border-radius: 20px;
-       padding:10px,15px,10px,15px;
-       color:#FFFFFF;
-       margin-top: 20px;
-       height:60px;
-       padding: 8px 20px;
-       margin-left: 70px;
-       font: 1em sans-serif;
-       
-    }
-    #box5 > button:hover{
-        background-color: rgb(55, 53, 53);
-    }
-    #container5{
-        border:1px solid black;
-        height:500px;
-        width:70%;
-        margin:auto;
-        display: flex;
-        margin-top: 60px;
-     }
-     
-</style>
 <body>
-    <div id="container1">
+<div class="image-container">
+  <h1>Weight Loss Meal Plan</h1>
+</div>
+<div class="body-container">
+  <div>
+    <div>
+      <p>
+        If your aim is to lose weight in a gradual, healthy manner then this
+        diet would meet your requirements. The meals are well balanced and
+        consist of complex carbohydrates, lean protein, healthy fats and
+        generous portions of fruits and vegetables which add all the
+        essential vitamins, minerals and fibre to your diet.
+      </p>
+
+      <p>
+        Disclaimer: This isn’t going to be any type of a crash diet which
+        will give you magical results; we’ll aim for 2-4kgs per month and
+        all your meals will be designed by our nutritionists who focus not
+        only on seeing results but also on ensuring that there’s no
+        compromise on your mental and physical health.
+      </p>
+      <button>View Sample Menu</button>
+    </div>
+    <div>
+      <h2>What our meals look like:</h2>
+      <div class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+          <img
+            src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-left-v2.svg"
+            alt="1"
+          />
+        </button>
+        <div class="carousel_track-container">
+          <ul class="carousel_track">
+            <li class="carousel_slide current-slide">
+              <img
+                class="carousel_image"
+                src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/DSC02724-1024x685.jpg"
+                alt="1"
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel_image"
+                src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/DSC02782-1-1024x684.jpg"
+                alt="2"
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel_image"
+                src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/keto.jpg"
+                alt="3"
+              />
+            </li>
+            <li class="carousel_slide">
+              <img
+                class="carousel_image"
+                src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/maintenance.jpg"
+                alt="3"
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel_button carousel_button--right">
+          <img
+            src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-right-v2.svg"
+            alt="2"
+          />
+        </button>
+
+        <div class="carousel_nav">
+          <button class="carousel_indicator 1 current-slide"></button>
+          <button class="carousel_indicator 2"></button>
+          <button class="carousel_indicator 3"></button>
+          <button class="carousel_indicator"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body-container2">
+  <h1>How Does It Work?</h1>
+  <div>
+    <div class="items">
+      <div class="flipper">
+        <img src="./Images/calories-calculator.png" alt="" />
+      </div>
+      <h3>Select your plan</h3>
+      <p>Choose the meal plan you want based on your preferences.</p>
+    </div>
+    <div class="items">
+      <div class="flipper">
+        <img src="./Images/checked-user-male.png" alt="" />
+      </div>
+      <h3>Nutrition Support</h3>
+      <p>
+        Our nutritionists will design your meals & will be available for
+        further consultations.
+      </p>
+    </div>
+    <div class="items">
+      <div class="flipper">
+        <img src="./Images/icons8-scooter-64.png" alt="" />
+      </div>
+      <h3>Home delivery</h3>
+      <p>
+        Freshly prepared, hot meals will be delivered right at your
+        doorstep.
+      </p>
+    </div>
+    <div class="items">
+      <div class="flipper">
+        <img src="./Images/icons8-take-away-food-100.png" alt="" />
+      </div>
+      <h3>Enjoy your meal</h3>
+      <p>Microwave the food if needed then dig in!</p>
+    </div>
+  </div>
+</div>
+
+<div class="body-container3">
+  <div class="body-container3-heading">
+    <h1>Choose your</h1>
+    <h1>ideal program</h1>
+    <h1>&</h1>
+    <h1>get started!</h1>
+  </div>
+
+  <div class="body-container3-items">
+    <h3><span>1 week </span> Plan</h3>
+    <div>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Freshly prepared
+        meals
+      </p>
+      <p><img src="./Images/icons8-tick-24.png" alt="" /> Home delivery</p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> No refined sugars
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Planned by
+        nutritionists
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Plan flexibility
+      </p>
+    </div>
+    <button>Order Now</button>
+  </div>
+  <div class="body-container3-items">
+    <h3><span>2 weeks </span> Plan</h3>
+    <div>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Freshly prepared
+        meals
+      </p>
+      <p><img src="./Images/icons8-tick-24.png" alt="" /> Home delivery</p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> No refined sugars
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Planned by
+        nutritionists
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Plan flexibility
+      </p>
+    </div>
+    <button>Order Now</button>
+  </div>
+  <div class="body-container3-items">
+    <h3><span>4 weeks </span> Plan</h3>
+    <div>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Freshly prepared
+        meals
+      </p>
+      <p><img src="./Images/icons8-tick-24.png" alt="" /> Home delivery</p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> No refined sugars
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Planned by
+        nutritionists
+      </p>
+      <p>
+        <img src="./Images/icons8-tick-24.png" alt="" /> Plan flexibility
+      </p>
+    </div>
+    <button>Order Now</button>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <h1>Weight-loss Diaries</h1>
+  <div class="slideshow"></div>
+</div>
+<div class="body-container4">
+    <p>
         
-    </div>
-    <div id="container2">
-        <div id="box1">
-            <div id="boxa">
-                <p>
-                    If your aim is to lose weight in a gradual, healthy manner then this diet would meet your requirements. The meals are well balanced and consist of complex carbohydrates, lean protein, healthy fats and generous portions of fruits and vegetables which add all the essential vitamins, minerals and fibre to your diet.    </p>
-                
-            </div>
-            <div id="boxb">
-                <p>Disclaimer: This isn’t going to be any type of a crash diet which will give you magical results; we’ll aim for 2-4kgs per month and all your meals will be designed by our nutritionists who focus not only on seeing results but also on ensuring that there’s no compromise on your mental and physical health.</p>
-            </div>
-            <button>View Sample Menu</button>
-        </div>
-        <div id="box2">
-            <h2>What our meals look like:</h2>
-        </div>
-    </div>
-    <h2>How Does It Work?</h2>
-    <div id="container3">
-       
-        <div id="boxc">
-            <div></div>
-            <h3>Select your plan</h3>
-            <p>Choose the meal plan you want based on your preferences.</p>
-        </div>
-        <div id="boxd">
-            <div></div>
-            <h3>Nutrition Support</h3>
-            <p>Our nutritionists will design your meals & will be available for further consultations.</p>
-        </div>
-        <div id="boxe">
-            <div></div>
-            <h3>Home delivery</h3>
-            <p>Freshly prepared, hot meals will be delivered right at your doorstep.</p>
-        </div>
-        <div id="boxf">
-            <div></div>
-            <h3>Enjoy your meal</h3>
-            <p>Microwave the food if needed then dig in!</p>
-        </div>
-    </div>
-    <div id="container4">
-
-        <h1>Choose your ideal program &
-            get started!</h1>
-        <div id="box3">
-           <center><h1> 1 week Plan</h1></center> 
-            <h3>Freshly prepared meals</h3>
-            <h3>Home delivery</h3>
-            <h3>No refined sugars</h3>
-            <h3>Planned by nutritionists</h3>
-            <h3>Plan flexibility</h3>
-            <button>Order Now</button>
-        </div>
-        <div id="box4">
-            <center><h1> 2 weeks Plan</h1></center>
-            <h3>Freshly prepared meals</h3>
-            <h3>Home delivery</h3>
-            <h3>No refined sugars</h3>
-            <h3>Planned by nutritionists</h3>
-            <h3>Plan flexibility</h3>
-            <button>Order Now</button>
-
-        </div>
-        <div id="box5">
-            <center><h1> 4 Weeks Plan</h1></center>
-            <h3>Freshly prepared meals</h3>
-            <h3>Home delivery</h3>
-            <h3>Plan flexibility</h3>
-            <h3>2 Free consultations</h3>
-            <h3>Discounted prices</h3>
-            <button>Order Now</button>
-            
-        </div>
-
-    </div>
-    <div id="container5"></div>
-    <div id="container6"></div>
+     Get fit in the gym,
+     <br>
+     lose weight in the kitchen.
+    </p>
+</div>
 </body>
 </html>
+<script src="./weightloss.js"></script>
