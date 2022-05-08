@@ -52,7 +52,7 @@ footer>#fixed>div:first-child>p{
     color: white;
 }
 #socials a:hover{
-transition: 1s;
+    /* transition: 1s; */
     color: #292d35;
 }
 #socials>div{
