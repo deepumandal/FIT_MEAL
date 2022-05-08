@@ -1,0 +1,68 @@
+#aboutBg{
+    width: 100%;
+    margin-bottom: 0;
+}
+#middleDiv{
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: #b3b3b3;
+    margin-top: -50px;
+}
+#heading{
+    font-family: 'Sacramento', cursive;
+    color: #292D35;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 150px;
+}
+.para{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#images{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#images>img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+#bottomDiv{
+    height: 600px;
+    width: 95%;
+    margin: auto;
+    background-color: #f3f5ed;
+    padding-top: 200px;
+    text-align: center;
+}
+#bottomDiv>h1{
+    font-size: 40px;
+    font-family: 'Fira sans', sans-serif;
+}
+#bottomDiv>div{
+    height: 250px;
+    width: 90%;
+    border: 3px solid #8ec038;
+    border-radius: 50px; 
+    box-sizing: border-box;
+    margin-left: 70px;
+    padding-top: 70px;
+    margin-top: 50px;
+}
+#bottom>div>i{
+    height: 50px;
+    width: 50px;
+    color: #8ec038;
+}
+#bottomDiv>div>p{
+    font-size: 17px;
+    font-family: 'Open sans', sans-serif;
+    font-style: italic;
+}
