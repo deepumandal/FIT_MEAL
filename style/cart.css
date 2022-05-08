@@ -78,8 +78,8 @@
         width: 100px;
     }
       
-    #container1{
-    /* height: 564px; */
+    #container{
+       
        /* border: 1px solid red; */
        margin: auto;
    }
@@ -197,7 +197,6 @@
        margin-left: 55%;
        font-size: 16px;
        font-weight: 700;
-       outline: none;
 
    }
    #proceed>#proc>#btn{
@@ -219,8 +218,6 @@
    #proceed>#proc>#btn:hover{
 
     background-color: rgb(254, 24, 24);
-    outline: none;
-    border: none;
    }
    #navbar{
        width: 100%;
@@ -235,7 +232,27 @@
     background: none;
    }
    
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
@@ -249,7 +266,81 @@
 
 @media screen and (min-width: 1204px) {
 
+    #topbar {
+        width: 100%;
+        height: 39px;
+        background-color: white;
+        /* border: 1px solid red; */
+        
+    }
+    
+    #prv_navbar {
+        width: 1200px;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        padding-left: 20px;
+        margin: auto;
+    }
+    
+    #prv_navbar>div:nth-child(1) {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 70%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #prv_navbar>div:nth-child(1) >h6{
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
+#login{
+    /* border: 1px solid red; */
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+#login>i{
+    color: #292d35;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
 
+}
+
+#prv_navbar>div:nth-child(1)>i{
+    color: #8ec038;
+}
+
+    #prv_navbar>div>h6 {
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
 
 
 
@@ -557,65 +648,14 @@ body {
     overflow-x: hidden;
 }
 
-#topbar {
-    width: 100%;
-    height: 39px;
-    background-color: white;
-}
 
-#prv_navbar {
-    width: 50%;
-    /* border: 1px solid black; */
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-}
 
-#prv_navbar>div {
-    display: flex;
-    /* border: 1px solid red; */
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
 
-#prv_navbar>div:first-child {
-    margin-right: -50px;
-}
 
-#prv_navbar>div:last-child {
-    margin-left: -180px;
-}
 
-#prv_navbar>div>h6 {
-    font-size: 15px;
-    font-family: Open-Sans, sans-serif;
-    font-weight: 400;
-    color: #292d35;
-    letter-spacing: 0.2px;
-    /* border: 1px solid teal; */
-    cursor: pointer;
-    margin-left: 10px;
-}
 
-#prv_navbar>div>i {
-    /* border: 1px solid black; */
-    /* padding: 20px 9px 20px 9px; */
-    font-size: 19px;
-    color: #80aa38;
-    cursor: pointer;
-}
 
-#right_navbar {
-    width: 30%;
-    /* border: 1px solid black; */
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 #navbar {
     width: 100%;
@@ -642,6 +682,82 @@ body {
 }
 
 @media screen and (max-width: 1204px) {
+
+#login,#login>i{
+    width: 0px;
+    display: none;
+}
+
+
+    #topbar {
+        width: 100%;
+        height: 39px;
+        background-color: white;
+        /* border: 1px solid red; */
+        
+    }
+    
+    #prv_navbar {
+        width: 70%;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        padding-left: 20px;
+        margin: auto;
+    }
+    
+    #prv_navbar>div:nth-child(1) {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* #prv_navbar>div:first-child {
+        margin-right: -50px;
+    }
+    
+    #prv_navbar>div:last-child {
+        margin-left: -180px;
+    } */
+    
+    #prv_navbar>div>h6 {
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
+    #prv_navbar>div>i {
+        /* border: 1px solid black; */
+        /* padding: 20px 9px 20px 9px; */
+        font-size: 19px;
+        color: #80aa38;
+        cursor: pointer;
+    }
+    
+    #right_navbar {
+        width: 30%;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+
 
 
 
@@ -837,3 +953,4 @@ meal plan panel end */
 
 
 /* navbar ends here */
+
