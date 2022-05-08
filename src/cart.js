@@ -74,7 +74,7 @@ console.log(cartArr)
   td1.innerText="Subtotal";
   td1.id="subtotal";
   let td2=document.createElement("td");
-  td2.innerText=`₹${elem.price }.00`
+  td2.innerText=`₹${elem.price }`
   rows2.append(td1,td2);
   let row3=document.createElement("tr");
   row3.id="p"
@@ -86,13 +86,19 @@ console.log(cartArr)
   let p= document.createElement("p");
   
   p.innerText=`Flat rate: ₹50.00 
-  Shipping to Telangana.`
-
-   let tdc=document.createElement("h5");
-   tdc.innerText="CHANGE ADDRESS ";
-   tdc.id="tdc"
+  Shipping to
+  Telangana`
   td4.append(p)
-  row3.append(td3,td4,tdc);
+  row3.append(td3,td4);
+  let row=document.createElement("tr");
+  row.innerText="."
+   let tda=document.createElement("td");
+   tda.id="tdc"
+   let h6=document.createElement("p");
+   h6.innerText="CHANGE ADDRESS"
+   
+   tda.append(h6)
+   row.append(tda)
 
   let row4=document.createElement("tr");
   let td5=document.createElement("td");
@@ -106,7 +112,7 @@ console.log(cartArr)
 
   document.getElementById("tbl").innerHTML=null;
   
-  document.getElementById("tbl").append(rows2,row3,row4);
+  document.getElementById("tbl").append(rows2,row3,row,row4);
 
 
 
@@ -126,4 +132,4 @@ var total=cartArr.reduce(function(ac,cv){
 
 
     document.querySelector("#total")
-    .textContent = `₹${total+50}`;
+    .textContent = `₹${total+50}.00`;

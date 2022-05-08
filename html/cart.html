@@ -5,21 +5,327 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link rel="icon" href="https://www.fitmeals.co.in/wp-content/uploads/2019/06/icon.png">
    
     <link rel="stylesheet" href="../style/cart.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Inter:wght@200;500&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../style/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./style/index.css"> -->
+ <style>
+
+#imgf{
+    width: 100%;
+    bottom: 534px;
+    margin-bottom: -50px;
    
 
-
-
+}
+footer{
+    /* bottom: 0px; */
+    /* margin-top: 200px; */
+    height: 534px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #292d35;
+    display: flex;
+    margin-top: 30px;
+}
+#fixed{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 534px;
+    display: flex;
+}
+footer>#fixed>div:first-child{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid teal; */
+    box-sizing: border-box;
+    padding: 80px 59px 83px 54px;
+    margin-left: 50px;
+}
+footer>#fixed>div:first-child>img{
+    cursor: pointer;
+    height: fit-content;
+}
+footer>#fixed>div:first-child>p{
+    color: #94979a;
+    font-size: 14px;
+    font-weight: 560;
+    line-height: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#socials{
+    width: 60%;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+#socials a{
+    color: white;
+}
+#socials a:hover{
+transition: 1s;
+    color: #292d35;
+}
+#socials>div{
+    width: 20%;
+    height: 100%;
+    background: #8ec038;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    /* transform: rotate(x); */
+}
+#socials>div:hover{
+transition: 1s;
+    background: white;
+    color: #292d35;
+}
+footer>#fixed>div:last-child{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid teal; */
+    z-index: 155;
+    display:flex;
+}
+footer>#fixed>div:last-child>div{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding:80px 0px 187px 17px;
+}
+footer>#fixed>div:last-child>div>div{
+    margin-top: 30px;
+}
+footer h2{
+    font-family: 'Fira Sans', sans-serif;
+    color: #8ec038;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+footer h2+ul{
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+footer h2+ul>li:hover{
+transition: 1s;
+    color: #8ec038;
+    font-size: 13px;
+    cursor: pointer;
+}
+footer h2+ul>li{
+    margin-bottom: 15px;
+}
+.contacts{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.contacts>div{
+    margin-left: 10px;
+    margin-top: -12px;
+    line-height: 15px;
+}
+.contacts>i{
+    color: #8ec038;
+}
+.contacts>i+div>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 100;
+}
+.contacts>i+div>p:hover{
+transition: 1s;
+    
+    color: #8ec038;
+}
+.contacts>i+div>p:first-child{
+    color: #8ec038;
+    font-size: 13px;
+    font-weight: bold;
+}
+ </style>
 
 </head>
   <body>
-      
-      <div id="navbar"></div>
-    <div >
-        <img src="../svg/cart.png" alt="">
+   
+       <!--   this is navbar -->
+
+       <div id="topbar">
+        <div id="prv_navbar">
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+                <h6>Food delivery only in Hyderabad</h6>
+                <i class="fa-solid fa-phone"></i>
+                <h6> 9100347480</h6>
+                <i class="fa-regular fa-envelope"></i>
+                <h6>fitmealsindia@gmail.com</h6>
+            </div>
+            <div id="login">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user" onclick="window.location.href=`../html/signup.html`"></i>
+                <i class="fa-solid fa-bag-shopping" onclick="window.location.href=`../html/cart.html`" ></i>
+
+            </div>
+        </div>
     </div>
-    <div id="container">
+
+    <!-- navbar starts here -->
+    <div id="navbar">
+
+        <div id="container">
+
+            <img src="//www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png"
+                onclick="window.location.href ='index.html'" alt="">
+
+            <div id="ham_burgur" onclick="openNav()">
+                <div class="big"></div>
+                <div class="big" id="ham_burgur_icon"></div>
+                <div class="big"></div>
+            </div>
+
+            <div id="sidepannel">
+                <script>
+//    count=0
+// if(window.matchMedia('(max-width:1209px)').matches && count>0)
+// {
+//     let sidepanel =document.querySelector("#sidepannel")
+//     sidepanel.style.transition = '0.7s'
+//     count++
+//     console.log(count)
+// }
+// if(window.matchMedia('(min-width:1204px)').matches){
+//     count=0
+//     console.log(count)
+// } 
+
+
+                </script>
+
+
+                <div id="sidebar_top">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
+                        onclick="window.location.href ='index.html'" alt="">
+                    <a class="closebtn" onclick="closeNav()">×</a>
+                </div>
+                <div id="sidebar_bottom">
+
+                    <div id="home" onclick="window.location.href='index.html'">Home</div>
+                    <div class="arrow" id="arrow1" id="no1">
+                        <div id="Meal_Plans">Meal Plans</div>
+                        <div class="arrow_mark">></div>
+                    </div>
+
+                    <div id="pannel">
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div onclick="window.location.href='../html/weightloss.html'">Weight Loss Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div onclick="window.location.href='../html/athlecticplan.html'">Maintain Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div> Athletic Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div>Keto Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div>Transformation challenges</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="Health_coaching" onclick="window.location.href='../html/healthcoaching.html'">Health
+                        coaching</div>
+
+                    <div class="arrow" id="arrow2" id="no1">
+                        <div id="Products" onclick="window.location.href='../html/products.html'">Products</div>
+                        <div class="arrow_mark">></div>
+
+                    </div>
+                    <div id="productsdata">
+                        <div>Veg Sweets</div>
+                        <div>Low Cal Sauces</div>
+                        <div>Nut Butter</div>
+                        <div>Fresh Bekes</div>
+                    </div>
+
+
+
+
+                    <div id="Bog" class="blog">Blog</div>
+                    <div class="arrow" id="arrow3" id="no1">
+
+                        <div id="About_Us">About Us</div>
+                        <div class="arrow_mark">></div>
+                    </div>
+                    <div id="aboutsdata">
+
+                        <div>Ours Story</div>
+                        <div>FAQ</div>
+                        <div>Testimonials</div>
+                    </div>
+
+                    <div id="Call">Call: 9100347480</div>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<div id="imgc" >
+    <img src="../svg/cart.png" alt="">
+</div>
+    <div id="container1">
 
     
         <div>
@@ -76,21 +382,93 @@
             
         </div>
         
-
-       
-       
+        
     
     </div>
+    <img id="imgf" src="../svg/Screenshot 2022-05-04 161015.png" />
+    <footer>
+        <div id="fixed">
+            <div>
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" />
+                <p>
+                    The Fitmeals culinary team consists of very passionate and skilled chefs.
+                    Our team is well versed in nutrition and all our menus and plans are designed
+                    by qualified nutrition experts.
+                </p>
+                <div id="socials">
+                    <div>
+                        <a href="https://twitter.com/fitmealsindia" target="blank">
+                            <i id="twitter" class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/fitmealsindia/?fref=ts" target="blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/fitmealsindia/" target="blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Meals</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Links</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>FAQ</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contacts</h2>
+                    <div class="contacts">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p>Call Us :</p>
+                            <p>9100347480</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <p>Email Us :</p>
+                            <p>fitmealsindia@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <div>
+                            <p>Our Location</p>
+                            <p>Banjara Hills, Road no.5, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-
+    
     
   </body>
   </html>
-<script>
 
-   
-
-
-</script>
 
 <script src="../src/cart.js"></script>
+<script src="../src/header.js"></script>
+<script src="../src/index.js"></script>
+<script src="./src/footer.js"></script>
+<script>
+
+</script>

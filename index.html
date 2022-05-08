@@ -31,6 +31,12 @@
                 <i class="fa-regular fa-envelope"></i>
                 <h6>fitmealsindia@gmail.com</h6>
             </div>
+            <div id="login">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user" onclick="window.location.href=`./html/signup.html`"></i>
+                <i class="fa-solid fa-bag-shopping" onclick="window.location.href=`./html/cart.html`" ></i>
+
+            </div>
         </div>
     </div>
 
@@ -49,7 +55,7 @@
             </div>
 
             <div id="sidepannel">
-<script>
+                <script>
 //    count=0
 // if(window.matchMedia('(max-width:1209px)').matches && count>0)
 // {
@@ -62,15 +68,15 @@
 //     count=0
 //     console.log(count)
 // } 
- 
 
-</script>
-<img src="" alt="">
+
+                </script>
+
 
                 <div id="sidebar_top">
                     <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
                         onclick="window.location.href ='index.html'" alt="">
-                    <a class="closebtn" onclick="closeNav()">×</a> 
+                    <a class="closebtn" onclick="closeNav()">×</a>
                 </div>
                 <div id="sidebar_bottom">
 
@@ -84,14 +90,14 @@
                         <div class="accordance">
                             <div class="accordance_meal">
                                 <div>></div>
-                                <div  onclick="window.location.href='./html/weightloss.html'">Weight Loss Meal Plan</div>
+                                <div onclick="window.location.href='./html/weightloss.html'">Weight Loss Meal Plan</div>
 
                             </div>
                         </div>
                         <div class="accordance">
                             <div class="accordance_meal">
                                 <div>></div>
-                                <div>Maintain Meal Plan</div>
+                                <div onclick="window.location.href='./html/athlecticplan.html'">Maintain Meal Plan</div>
 
                             </div>
                         </div>
@@ -120,10 +126,11 @@
 
 
 
-                    <div id="Health_coaching" onclick="">Health coaching</div>
+                    <div id="Health_coaching" onclick="window.location.href='./html/healthcoaching.html'">Health
+                        coaching</div>
 
                     <div class="arrow" id="arrow2" id="no1">
-                        <div id="Products">Products</div>
+                        <div id="Products" onclick="window.location.href='./html/products.html'">Products</div>
                         <div class="arrow_mark">></div>
 
                     </div>
@@ -137,14 +144,14 @@
 
 
 
-                    <div id="Bog" class="blog"  >Blog</div>
+                    <div id="Bog" class="blog">Blog</div>
                     <div class="arrow" id="arrow3" id="no1">
 
-                        <div id="About_Us" >About Us</div>
+                        <div id="About_Us">About Us</div>
                         <div class="arrow_mark">></div>
                     </div>
                     <div id="aboutsdata">
-                       
+
                         <div>Ours Story</div>
                         <div>FAQ</div>
                         <div>Testimonials</div>
@@ -187,7 +194,7 @@
                     <p>we got differnt meal plans to cater to your specific requirements be it weight loss, staying
                         healthy
                         or building muscles.</p>
-                    <button>view plans</button>
+                    <button onclick="window.location.href='#choose'">view plans</button>
                 </div>
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_02.jpg" alt="Chicago"
                     class="animation_" class="d-block" style="width:100%">
@@ -198,13 +205,14 @@
                     <h1>Get A Custimise Diet Plan </h1>
                     <p>Consult our nutritionists and get a diet plan desigmed specifically for you.</p>
                     <div id="button">
-                        <button>Learn more</button>
-                        <button>View plans </button>
+                        <button onclick="window.location.href='./html/healthcoaching.html'">Learn more</button>
+                        <button onclick="window.location.href='./html/healthcoaching.html'">View plans </button>
                     </div>
 
                 </div>
-                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg "
-                    class="animation_" alt="New York" id="bootsrap_small" class="d-block" style="width:100%">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg" alt="New York"
+                    class="animation_" class="d-block" style="width:100%">
+
 
             </div>
             <div class="carousel-item">
@@ -213,8 +221,8 @@
                     <p>Get easy access to healthy recipes workout plans nutrition consuitations and weekly menus.</p>
                     <button id="Download">Download now</button>
                 </div>
-                <img src="https://www.fitmeals.co.in/wp-content/uploads/2018/02/SLIDE_03.jpg" alt="New York"
-                    class="animation_" class="d-block" style="width:100%">
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/09/Creative-1-1920x1280px.jpg "
+                    class="animation_" alt="New York" id="bootsrap_small" class="d-block" style="width:100%">
 
             </div>
         </div>
@@ -231,14 +239,6 @@
     <div id="data">
 
     </div>
-
-
-
-
-
-
-
-
 
 
     <!-- <div id="slideshow">
@@ -322,7 +322,7 @@
                         weight requirements. With a new changing menu every week, we bring to you food from various
                         cuisines, with a healthy twist. We make healthy eating fun and effortless!</p>
 
-                    <button id="animateone">Read More</button>
+                    <button id="animateone" onclick="window.location.href='index.html'">Read More</button>
                 </div>
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/health-bottle-cut.jpg" alt="">
                 <div id="secound_list">
@@ -457,7 +457,8 @@ why chose fit meals -->
                         your requirements. The meals are well balanced and consist of complex carbohydrates, lean
                         protein, healthy fats and generous portions of fruits and vegetables which add all the essential
                         vitamins, minerals and fibre to your diet.</p>
-                    <button class="btnhoverone">view plan</button>
+                    <button class="btnhoverone" onclick="window.location.href='./html/weightloss.html'">view
+                        plan</button>
                 </div>
 
 
@@ -600,7 +601,8 @@ why chose fit meals -->
                 <p>Say goodbye to crash diets and give us the opportunity to create highly tailored plans that suit your
                     body type and food preferences distinctively. Just give us your details and goals and we’ll do all
                     the meal planning for you!</p>
-                <button id="ultimatedite">Learn more</button>
+                <button id="ultimatedite" onclick="window.location.href='./html/healthcoaching.html'">Learn
+                    more</button>
             </div>
             <div id="diet_image">
                 <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/02/dish_07-1-360x360-1.jpg" alt="">
@@ -842,10 +844,7 @@ why chose fit meals -->
         <div id="client" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#client" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#client" data-bs-slide-to="1"></button>
-            </div>
+
 
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
@@ -855,8 +854,8 @@ why chose fit meals -->
                         forward to having Fitmeals every day.</p>
 
 
-                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2017/05/11-01-110x110.png" alt="Los Angeles"
-                        class="d-block" class="idimage">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2017/05/11-01-110x110.png"
+                        style="z-index: 50;" alt="Los Angeles" class="d-block" class="idimage">
                     <p>Divya</p>
 
                 </div>
@@ -865,8 +864,8 @@ why chose fit meals -->
                     <p>The perfect combination of healthy and delicious food. Fitmeals made sure that I reach my fitness
                         and weight goals with frequent follow up calls from the nutritionist who made sure to always
                         check on the progress. Excellent service, really happy with the results .</p>
-                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/12-01-110x110.png" alt="Chicago"
-                        class="d-block" class="idimage">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/12-01-110x110.png"
+                        style="z-index: 50;" alt="Chicago" class="d-block" class="idimage">
                     <p>Sanjana Devulapally</p>
                 </div>
             </div>
@@ -895,8 +894,8 @@ why chose fit meals -->
         <p>Subscribe to our newsletter to stay up to date with our discounts, new products, recipes & nutrition tips.
         </p>
         <div id="subscribe">
-            <input type="email" name="" placeholder="Your email..." id="email">
-            <button id="Subscribebtn">Subscribe</button>
+            <input type="email" name="" placeholder="Your email..." id="email" required>
+            <button id="Subscribebtn" onclick="window.location.href='./html/signup.html'">Subscribe</button>
         </div>
     </div>
 
@@ -957,7 +956,7 @@ why chose fit meals -->
                 </div>
             </div>
             <div id="endbtn">
-                <button class="Read">Read more</button>
+                <button class="Read" onclick="window.location.href= './html/blog.html'">Read more</button>
             </div>
         </div>
     </div>
@@ -1001,17 +1000,17 @@ why chose fit meals -->
                 <div>
                     <h2>Explore</h2>
                     <ul>
-                        <li>Home</li>
-                        <li>Meals</li>
+                        <li onclick="window.location.href='index.html'">Home</li>
+                        <li onclick="window.location.href='weightloss.html'">Meals</li>
                     </ul>
                 </div>
                 <div>
                     <h2>Links</h2>
                     <ul>
-                        <li>About Us</li>
-                        <li>Blog</li>
-                        <li>FAQ</li>
-                        <li>Testimonials</li>
+                        <li onclick="window.location.href=`https://www.fitmeals.co.in/about-us/'`">About Us</li>
+                        <li onclick="window.location.href=`https://www.fitmeals.co.in/blog/`">Blog</li>
+                        <li onclick="window.location.href=`https://www.fitmeals.co.in/faq/`">FAQ</li>
+                        <li onclick="window.location.href =`https://www.fitmeals.co.in/testimonials/`">Testimonials</li>
                     </ul>
                 </div>
                 <div>

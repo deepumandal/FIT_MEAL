@@ -415,16 +415,6 @@ h1{
     </style>
 </head>
 <body>  
-
-   
-
-
-
-
-
-
-
-
     <div id="bagroung_selected_food"></div> 
     <div id="container">
     <div id="Selected_food"></div> 
@@ -571,7 +561,7 @@ h1{
      
 
    let el=JSON.parse(localStorage.getItem("selected"))
-  
+   let CartData=[];  
 
    
  
@@ -629,9 +619,9 @@ h1{
 
     }
       function  myfun(cart_data){  
-    
-    localStorage.setItem("CartData",JSON.stringify(cart_data));
-
+        CartData.push(cart_data)
+    localStorage.setItem("CartItems",JSON.stringify(CartData));
+    window.location.href="../html/cart.html"
 
 }
 
