@@ -86,14 +86,18 @@ console.log(cartArr)
   let p= document.createElement("p");
   
   p.innerText=`Flat rate: ₹50.00 
-  Shipping to Telangana.`
+  Shipping to
+  Telangana`
   td4.append(p)
   row3.append(td3,td4);
   let row=document.createElement("tr");
   row.innerText="."
    let tda=document.createElement("td");
-   tda.innerText="CHANGE ADRESSS ";
    tda.id="tdc"
+   let h6=document.createElement("p");
+   h6.innerText="CHANGE ADDRESS"
+   
+   tda.append(h6)
    row.append(tda)
 
   let row4=document.createElement("tr");

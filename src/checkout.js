@@ -51,7 +51,7 @@ checkoutArr.map(function(data) {
     document.querySelector("#sbmt").addEventListener("click", formSubmit);
 
     function formSubmit(event) {
-        window.location.href="placeorder.html";
+        window.location.href="../html/placeorder.html";
     }
 
     // document.getElementById("return").addEventListener("click", emptyCart);
