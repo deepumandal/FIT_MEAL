@@ -1,0 +1,64 @@
+#topBar{
+    height: 30px;
+    width: 99%;
+    margin: auto;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(147, 144, 144);
+    display: flex;
+    justify-content: space-between;
+}
+#leftBar{
+    height: 100%;
+    width: 45%;
+    /* border: 1px solid teal; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#leftBar>div{
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+}
+#leftBar i{
+    color: #8ec038;
+    margin-right: 10px;
+}
+#leftBar p{
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    color: #292D35;
+}
+#number{
+    font-weight: bolder;
+}
+#rightBar{
+    height: 100%;
+    width: 15%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#rightBar>i{
+    cursor: pointer;
+}
+#rightBar>i:hover{
+    color: #da2424;
+}
+#rightBar>div{
+    height: 20px;
+    width: 20px;
+    background-color: #da2424;
+    margin-left: -40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

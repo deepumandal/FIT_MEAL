@@ -1,0 +1,773 @@
+#aboutBg{
+    width: 100%;
+    margin-bottom: 0;
+}
+#middleDiv{
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: #b3b3b3;
+    margin-top: -50px;
+}
+#heading{
+    font-family: 'Sacramento', cursive;
+    color: #292D35;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 150px;
+}
+.para{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#images{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#images>img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+#bottomDiv{
+    height: 600px;
+    width: 95%;
+    margin: auto;
+    background-color: #f3f5ed;
+    padding-top: 200px;
+    text-align: center;
+}
+#bottomDiv>h1{
+    font-size: 40px;
+    font-family: 'Fira sans', sans-serif;
+}
+#bottomDiv>div{
+    height: 250px;
+    width: 90%;
+    border: 3px solid #8ec038;
+    border-radius: 50px; 
+    box-sizing: border-box;
+    margin-left: 70px;
+    padding-top: 70px;
+    margin-top: 50px;
+}
+#bottom>div>i{
+    height: 50px;
+    width: 50px;
+    color: #8ec038;
+}
+#bottomDiv>div>p{
+    font-size: 17px;
+    font-family: 'Open sans', sans-serif;
+    font-style: italic;
+}
+
+
+/* navbar starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Open+Sans:ital@1&family=Sacramento&display=swap');
+
+
+
+@media screen and (min-width: 1204px) {
+
+    #topbar {
+        width: 100%;
+        height: 39px;
+        background-color: white;
+        /* border: 1px solid red; */
+        
+    }
+    
+    #prv_navbar {
+        width: 1200px;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        padding-left: 20px;
+        margin: auto;
+    }
+    
+    #prv_navbar>div:nth-child(1) {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 70%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #prv_navbar>div:nth-child(1) >h6{
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
+#login{
+    /* border: 1px solid red; */
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+#login>i{
+    color: #292d35;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+#prv_navbar>div:nth-child(1)>i{
+    color: #8ec038;
+}
+
+    #prv_navbar>div>h6 {
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
+
+
+
+    /* navbar edits here */
+    #container>img {
+        /* border: 1px solid red; */
+        width: 90px;
+        height: 46px;
+        margin: 27px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    #ham_burgur,
+    #ham_burgur>div {
+        display: none;
+        /* border: 1px solid red; */
+    }
+
+    #container {
+        /* border: 1px solid red; */
+        width: 1204px;
+        height: 100%;
+        /* border: 1px dashed black; */
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sidepannel {
+        /* background-color: red; */
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        /* border: 1px solid red; */
+        /* background-color: #292d35; */
+        position: relative;
+        
+
+    }
+
+    #sidebar_top {
+        /* border: 1px solid red; */
+        display: none;
+    }
+
+    #sidebar_bottom {
+        /* border: 1px solid black; */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+
+    #home {
+        color: #8ec038;
+        font-family: 'Fira Sans', sans-serif;
+
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        width: fit-content;
+        margin: 0%;
+    }
+
+    .arrow_mark {
+        margin-top: -2px;
+        margin-left: 2px;
+    }
+
+    #Meal_Plans,
+    #Health_coaching,
+    #Products,
+    #About_Us {
+        font-family: 'Fira Sans', sans-serif;
+        color: #292d35;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        width: fit-content;
+      
+        margin: 0%;
+        /* padding: 39px 36px 0px 17px; */
+    }
+    .blog{
+   
+        font-family: 'Fira Sans', sans-serif;
+            color: #292d35;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            width: fit-content;
+          
+            margin: 0%
+    }
+
+  
+    #Meal_Plans:hover,
+    #Health_coaching:hover,
+    #Products:hover,
+    .blog:hover,
+    #About_Us:hover,
+    #Meal_Plans:focus,
+    #Health_coaching:focus,
+    #Products:focus,
+    .blog:focus,
+    #About_Us:focus {
+        color: #8ec038;
+        transition: 500ms;
+
+    }
+
+    .arrow {
+        display: flex;
+    }
+
+    #Call {
+        /* border: 1px solid red; */
+        padding: 10px 29px 10px 29px;
+        border-radius: 24px;
+        background-color: #da2424;
+        color: white;
+        font-weight: 700;
+    }
+
+    #Call:hover {
+        background-color: #8ec038;
+        transition: 700ms;
+    }
+
+    #pannel {
+        position: absolute;
+        top: 70px;
+        left: 11px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+     display: block;
+        opacity: 0%;
+        height: 20px;
+        overflow: hidden;
+    }
+
+    #arrow1:hover+#pannel,
+    #pannel:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 1s;
+        height: fit-content;
+    }
+
+    #productsdata,#aboutsdata{
+        height: 20px;
+        overflow: hidden;
+    }
+
+    #arrow2:hover+#productsdata,
+    #productsdata:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 1s;
+        height: fit-content;
+    }
+
+    #arrow3:hover+#aboutsdata,
+    #aboutsdata:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 500ms;
+        height: fit-content;
+    }
+
+
+
+
+
+
+
+
+
+
+    .accordance_meal>div:first-child {
+        display: none;
+    }
+
+    .accordance_meal>div:last-child {
+        margin: 11px 5px 13px 8px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 7px 10px 7px 28px;
+    }
+
+    .accordance_meal>div:last-child:hover {
+/* border: 1px solid red; */
+        background-color: #8ec038;
+        transition: 100ms;
+
+    }
+
+    #productsdata {
+        display: block;
+/* border: 1px solid red; */
+        position: absolute;
+        top: 70px;
+        left: 35%;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+        opacity: 0%;
+
+
+
+    }
+
+    #productsdata>div {
+        /* padding: 0px 0px 0px 0px;
+        margin: 28px 52px 18px 46px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.7px; */
+
+        margin: 9px 11px 9px 11px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 4px 29px 6px 38px;
+    }
+   #productsdata>div:hover,#aboutsdata>div:hover{
+    /* border: 1px solid red; */
+    background-color: #8ec038;
+    transition: 100ms;
+   }
+
+
+    #aboutsdata {
+        display: block;
+
+        position: absolute;
+        top: 70px;
+        left: 62%;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+        opacity: 0%;
+/* height: fit-content; */
+        
+
+    }
+
+    #aboutsdata>div {
+        /* padding: 0px 0px 0px 0px;
+        margin: 28px 52px 18px 46px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;*/
+        letter-spacing: 0.7px; 
+
+
+        margin: 11px 5px 13px 8px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 6px 25px 7px 28px;
+
+
+    }
+
+
+
+
+
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#container {
+    width: 85%;
+    height: 100%;
+    /* border: 1px dashed black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1204px) {
+
+#login,#login>i{
+    width: 0px;
+    display: none;
+}
+
+
+    #topbar {
+        width: 100%;
+        height: 39px;
+        background-color: white;
+        /* border: 1px solid red; */
+        
+    }
+    
+    #prv_navbar {
+        width: 70%;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        padding-left: 20px;
+        margin: auto;
+    }
+    
+    #prv_navbar>div:nth-child(1) {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* #prv_navbar>div:first-child {
+        margin-right: -50px;
+    }
+    
+    #prv_navbar>div:last-child {
+        margin-left: -180px;
+    } */
+    
+    #prv_navbar>div>h6 {
+        font-size: 15px;
+        font-family: Open-Sans, sans-serif;
+        font-weight: 400;
+        color: #292d35;
+        letter-spacing: 0.2px;
+        /* border: 1px solid teal; */
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding:auto;
+    }
+    
+    #prv_navbar>div>i {
+        /* border: 1px solid black; */
+        /* padding: 20px 9px 20px 9px; */
+        font-size: 19px;
+        color: #80aa38;
+        cursor: pointer;
+    }
+    
+    #right_navbar {
+        width: 30%;
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+
+
+
+
+    /* navbar starts here */
+
+    #container>img {
+        /* border: 1px solid red; */
+        width: 90px;
+        height: 46px;
+        margin: 27px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    #container>#ham_burgur {
+        width: 29px;
+        height: auto;
+        margin: 35px 55px;
+        cursor: pointer;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+
+        cursor: pointer;
+    }
+
+    #container>#ham_burgur>div {
+        background-color: #292d35;
+        width: 29px;
+        height: 2px;
+        cursor: pointer;
+
+    }
+
+    #container>#ham_burgur>#ham_burgur_icon {
+        background-color: #292d35;
+        width: 14px;
+        height: 2px;
+        cursor: pointer;
+        align-self: flex-end;
+        transition: width 1s;
+        margin: 10px 0px 9px 15px;
+    }
+
+    #container>#ham_burgur>#ham_burgur_icon:hover {
+        width: 29px;
+        height: 2px;
+        cursor: pointer;
+        align-self: flex-end;
+        background-color: #80aa38;
+    }
+
+    .big:hover {
+        background-color: #80aa38;
+    }
+
+    #sidepannel {
+        width: 0px;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        right: 0;
+        /* border: 1px solid red; */
+        background-color: #292d35;
+        transition: 0.4s;
+     display: none;
+    }
+
+    #sidepannel>#sidebar_top {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 21%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #sidepannel>#sidebar_top>img {
+        width: 192px;
+        height: 108px;
+        padding: 39px 25px 20px 60px;
+        /* border: 1px solid red; */
+       
+        
+    }
+
+    
+
+    #sidepannel>#sidebar_top>.closebtn {
+        color: white;
+        padding: 35px 42px 23px 29px;
+        font-size: 45px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    #sidepannel>#sidebar_top>.closebtn:hover {
+        color: #80aa38
+    }
+
+
+    #sidepannel>#sidebar_bottom {
+        border-bottom: 1px solid gray;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+
+
+    }
+
+    #sidepannel>#sidebar_bottom>div {
+        color: white;
+        /* border: 1px solid red; */
+        width: 90%;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;       
+        padding: 7px 0px 8px 20px;
+        border-radius: 25px;
+        text-align: left;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    #sidepannel>#sidebar_bottom>div:hover {
+        color: #80aa38;
+        transition: 0.5s;
+    }
+
+    #sidepannel>#sidebar_bottom>#home:hover {
+        color: #ffffff;
+       background-color: #80aa38;
+        transition: 0.8s;
+    }
+
+    #sidepannel>#sidebar_bottom>#home {
+        background-color: #80aa38;
+
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel:hover {
+        color: #ffffff;
+    }
+    #productsdata,#aboutsdata{
+        display: none;
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel>.accordance:hover {
+        color: #80aa38;
+        transition: 0.5s;
+    }
+
+
+
+    #sidepannel>#sidebar_bottom>.arrow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sidepannel>#sidebar_bottom>.arrow>.arrow_mark {
+        margin-right: 25px;
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel {
+        display: none;
+    }
+    
+    /* 
+meal plane panel  */
+    #pannel>.accordance>.accordance_meal {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #pannel>.accordance>.accordance_meal>div:nth-child(1) {
+        font-weight: 200;
+        margin-right: 9px;
+    }
+
+    #Blog{
+        text-align: start;
+    }
+
+}
+
+/* 
+meal plan panel end */
+
+
+
+/* navbar ends here */
