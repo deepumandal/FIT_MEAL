@@ -32,7 +32,7 @@ function check(){
     document.querySelector('#sidepannel').style.display = 'flex'
   
     // alert('')
-    document.getElementById("sidepannel").style.width = "74%"
+    document.getElementById("sidepannel").style.width = "84%"
   }else{
     document.querySelector('#sidepannel').style.display = 'none'
     closeNav()
@@ -42,13 +42,9 @@ function check(){
 $(document).ready(function(){
   $(window).resize(function(){
     check()
+    console.log('working')
   });
 });
-
-
-
-
-
 
 
 
