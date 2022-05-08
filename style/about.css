@@ -66,11 +66,7 @@
     font-family: 'Open sans', sans-serif;
     font-style: italic;
 }
-<<<<<<< HEAD
-=======
 
-
-/* navbar starts here */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Poppins:wght@700&display=swap');
@@ -81,6 +77,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Open+Sans:ital@1&family=Sacramento&display=swap');
+
+
+body{
+    
+   margin: 0px;
+  
+    overflow-x: hidden;
+}
 
 
 
@@ -128,21 +132,21 @@
         padding:auto;
     }
     
-#login{
-    /* border: 1px solid red; */
-    width: 300px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-}
-#login>i{
-    color: #292d35;
-    font-size: 22px;
-    cursor: pointer;
-    margin-left: 20px;
-
-}
+    #login{
+        /* border: 1px solid red; */
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 50px;
+    }
+    #login>i{
+        color: #292d35;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: 20px;
+    
+    }
 
 #prv_navbar>div:nth-child(1)>i{
     color: #8ec038;
@@ -192,8 +196,8 @@
     #sidepannel {
         /* background-color: red; */
         width: 75%;
-        display: flex;
-        justify-content: space-between;
+       
+       
         margin-left: 0px;
         /* border: 1px solid red; */
         /* background-color: #292d35; */
@@ -203,7 +207,7 @@
     }
 
     #sidebar_top {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         display: none;
     }
 
@@ -211,9 +215,13 @@
         /* border: 1px solid black; */
         display: flex;
         width: 100%;
+        height: 100%;
         justify-content: space-between;
         position: relative;
         align-items: center;
+    }
+    hr{
+        display: none;
     }
 
     #home {
@@ -463,10 +471,7 @@
 
 }
 
-body {
-    margin: 0px;
-    overflow-x: hidden;
-}
+
 
 
 
@@ -648,7 +653,7 @@ body {
     #sidepannel>#sidebar_top {
         /* border: 1px solid black; */
         width: 100%;
-        height: 21%;
+        height: 12%;
         display: flex;
         justify-content: space-between;
 
@@ -656,8 +661,8 @@ body {
     }
 
     #sidepannel>#sidebar_top>img {
-        width: 192px;
-        height: 108px;
+        width: 142px;
+        height: 69px;
         padding: 39px 25px 20px 60px;
         /* border: 1px solid red; */
        
@@ -688,13 +693,13 @@ body {
         flex-direction: column;
         justify-content: space-between;
         padding-left: 20px;
-
+        margin-top: 70px;
 
     }
 
     #sidepannel>#sidebar_bottom>div {
         color: white;
-        /* border: 1px solid red; */
+        /* border: 1px solid rgb(0, 0, 0); */
         width: 90%;
         font-size: 22px;
         font-family: 'Poppins', sans-serif;
@@ -704,6 +709,7 @@ body {
         text-align: left;
         margin-top: 7px;
         cursor: pointer;
+        
     }
 
     #sidepannel>#sidebar_bottom>div:hover {
@@ -766,11 +772,3 @@ meal plane panel  */
     }
 
 }
-
-/* 
-meal plan panel end */
-
-
-
-/* navbar ends here */
->>>>>>> fca6abf18f4546d674ffa41079cb57886f8dc31b
