@@ -10,11 +10,12 @@ document.getElementById("login").addEventListener("click", function(){
 
     let loginArr = [];
 
-    for(let i=0; i<data; i++){
+    for(let i=0; i<data.length; i++){
 
+        console.log(data[i].username);
         if((data[i].username == usernameLogin || data[i].email == usernameLogin) && data[i].password == passwordLogin){
 
-            let loginObj = {
+            var loginObj = {
                 name : data[i].username,
                 email : data[i].email,
             };
@@ -32,6 +33,7 @@ document.getElementById("login").addEventListener("click", function(){
 
         alert("Login successful.");
 
+        let homepage = localStorage.setItem("homepageUser",JSON.stringify(loginObj));
         window.location.href = "../index.html";
     }
     else{
