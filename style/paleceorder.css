@@ -1,0 +1,54 @@
+.price {
+    font-weight: lighter;
+    color: rgb(92, 91, 91);
+}
+.details {
+    display: flex;
+    margin: 0 auto;
+    width: 35%;
+    justify-content: space-between;
+    padding: 0;
+}
+span {
+    color: #292d35;
+    font-weight: bold;
+}
+.details > h4 {
+    margin: 0;
+    width: 50%;
+}
+#return {
+    width: 40%;
+    height: 40px;
+    background-color: #292d35;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+    margin: 30px 30%;
+}
+#return:hover {
+    background-color: #8ec038;
+}
+@media only screen and (min-width:0px) and (max-width: 400px) {
+    .details {
+        width : 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .details > h4 {
+    text-align: center;
+    margin: 5px 0;
+    width: 100%;
+   }
+}
+@media only screen and (min-width:401px) and (max-width: 950px) {
+    .details {
+        width : 60%;
+    }
+}
+#head{
+    border: 1px solid red;
+    font-size: 17px;
+    background-color: green;
+}

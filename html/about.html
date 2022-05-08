@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Inter:wght@200;500&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab:wght@500&display=swap" 
+          rel="stylesheet">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Inter:wght@200;500&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab:wght@500&family=Sacramento&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/topbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="topbar">
+        <div id="prv_navbar">
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+                <h6>Food delivery only in Hyderabad</h6>
+                <i class="fa-solid fa-phone"></i>
+                <h6> 9100347480</h6>
+                <i class="fa-regular fa-envelope"></i>
+                <h6>fitmealsindia@gmail.com</h6>
+            </div>
+            <div id="login">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user" onclick="window.location.href=`./html/signup.html`"></i>
+                <i class="fa-solid fa-bag-shopping" onclick="window.location.href=`./html/cart.html`" ></i>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar starts here -->
+    <div id="navbar">
+
+        <div id="container">
+
+            <img src="//www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png"
+                onclick="window.location.href ='index.html'" alt="">
+
+            <div id="ham_burgur" onclick="openNav()">
+                <div class="big"></div>
+                <div class="big" id="ham_burgur_icon"></div>
+                <div class="big"></div>
+            </div>
+
+            <div id="sidepannel">
+                <script>
+//    count=0
+// if(window.matchMedia('(max-width:1209px)').matches && count>0)
+// {
+//     let sidepanel =document.querySelector("#sidepannel")
+//     sidepanel.style.transition = '0.7s'
+//     count++
+//     console.log(count)
+// }
+// if(window.matchMedia('(min-width:1204px)').matches){
+//     count=0
+//     console.log(count)
+// } 
+
+
+                </script>
+
+
+                <div id="sidebar_top">
+                    <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
+                        onclick="window.location.href ='index.html'" alt="">
+                    <a class="closebtn" onclick="closeNav()">×</a>
+                </div>
+                <div id="sidebar_bottom">
+
+                    <div id="home" onclick="window.location.href='../index.html'">Home</div>
+                    <div class="arrow" id="arrow1" id="no1">
+                        <div id="Meal_Plans">Meal Plans</div>
+                        <div class="arrow_mark">></div>
+                    </div>
+
+                    <div id="pannel">
+                        <div class="accordance">
+                            <div class="accordance_meal" onclick="window.location.href='./weightloss.html'">
+                                <div>></div>
+                                <div>Weight Loss Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal" onclick="window.location.href='./maintenance.html'">
+                                <div>></div>
+                                <div>Maintain Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal" onclick="window.location.href='./athlecticplan.hyml'">
+                                <div>></div>
+                                <div > Athletic Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal" onclick="window.location.href='./keto.html'">
+                                <div>></div>
+                                <div >Keto Meal Plan</div>
+
+                            </div>
+                        </div>
+                        <div class="accordance">
+                            <div class="accordance_meal">
+                                <div>></div>
+                                <div>Transformation challenges</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="Health_coaching" onclick="window.location.href='./healthcoaching.html'">Health
+                        coaching</div>
+
+                    <div class="arrow" id="arrow2" id="no1">
+                        <div id="Products" onclick="window.location.href='./products.html'">Products</div>
+                        <div class="arrow_mark">></div>
+
+                    </div>
+                    <div id="productsdata">
+                        <div>Veg Sweets</div>
+                        <div>Low Cal Sauces</div>
+                        <div>Nut Butter</div>
+                        <div>Fresh Bekes</div>
+                    </div>
+
+
+
+
+                    <div id="Bog" class="blog" onclick="window.location.href='./blog.html'">Blog</div>
+                    <div class="arrow" id="arrow3" id="no1">
+
+                        <div id="About_Us" onclick="window.location.href='./about.html'">About Us</div>
+                        <div class="arrow_mark">></div>
+                    </div>
+                    <div id="aboutsdata" >
+
+                        <div>Ours Story</div>
+                        <div>FAQ</div>
+                        <div>Testimonials</div>
+                    </div>
+
+                    <div id="Call">Call: 9100347480</div>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+  
+
+    <img id="aboutBg" src="../svg/About Us Bg.png"/>
+    <div id="middleDiv">
+        <p id="heading">Where it all began</p>
+        <p class="para">In 2015, Aman, Zeeshan, Bhavyanth and Apoorva Co-Founded Fitmeals India, 
+            the first delivery service of its kind in India.The intention was to introduce the concept 
+            of healthy eating in Hyderabad where people always associated healthy food with terms like 
+            ‘expensive’, ‘boring’ and ’bland’. Since then Fitmeals grew profoundly over the years and 
+            now we cater to clients all over the city. Thanks to the diverse & talented staff, 
+            Fitmeals India has encouraged a revolution of progressive consumers.
+        </p>
+        <div id="images">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/IMG_0160-360x360.jpeg" alt="">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/IMG_0159-1.jpg" alt="">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/IMG_0161-360x353.jpg" alt="">
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/IMG_0157-360x364.jpeg" alt="">
+        </div>
+    </div>
+    <div id="bottomDiv">
+        <h1>Our Mission</h1>
+        <p class="para">We are on a mission to bring awareness about the importance of eating well and to improve your 
+            relationship with food. The relationship between food and the human body is so intense yet 
+            ignored by everybody that often results in neglected health and ultimately health related problems. 
+            Our aim is to ensure that everybody has access to nutrient dense, convenient meals so that you don’t
+            have to compromise on your nutrition because of your busy schedules.
+        </p>
+        <div>
+            <img src="../svg/About Us quotes.png" alt="">
+            <p>For us it’s not ‘just food’, it’s a matter of good lifestyle choices and eventually a better 
+                quality of life.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../src/about.js" type="module"></script>
+<script>
+    
+window.onscroll = function () { myFunction() };
+
+var main_header = document.getElementById("navbar");
+var sticky = main_header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    main_header.classList.add("sticky")
+  } else {
+    main_header.classList.remove("sticky");
+  }
+}
+
+// this is navbar property above
+
+
+
+// this is js code for side panel
+
+// console.log("dhfjkd",window.screen.width)
+// if(window.screen.width>=1204){
+//   document.getElementById("sidepannel").style.width = "550px"
+// }
+
+// console.log(window.matchMedia('(max-width:1200px)').matches)
+
+function check(){
+
+  if(!window.matchMedia('(max-width:1200px)').matches){
+    console.log(!window.matchMedia('(max-width:1200px)').matches)
+    document.querySelector('#sidepannel').style.display = 'flex'
+  
+    // alert('')
+    document.getElementById("sidepannel").style.width = "74%"
+  }else{
+    document.querySelector('#sidepannel').style.display = 'none'
+    closeNav()
+  }
+}
+
+$(document).ready(function(){
+  $(window).resize(function(){
+    check()
+  });
+});
+
+
+
+
+
+
+
+
+
+function openNav() {
+
+
+
+ 
+   document.getElementById("sidepannel").style.width = "550px"
+   document.getElementById('sidepannel').style.display="block"
+
+}
+
+function closeNav() {
+  document.getElementById("sidepannel").style.width = "0px"
+}
+
+
+
+
+
+</script>

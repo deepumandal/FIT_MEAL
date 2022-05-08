@@ -1,37 +1,72 @@
-////slideshow is here
-let slideIndex =0;
 
-showslides();
+window.onscroll = function () { myFunction() };
 
-function showslides(n){
+var main_header = document.getElementById("navbar");
+var sticky = main_header.offsetTop;
 
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let data = document.getElementsByClassName("data")
-  //  console.log(data)
-   console.log(slides)
-    for(let i=0; i<slides.length ; i++){
-        slides[i].style.display = "none";
-       data[i].style.display = "none"
-    }
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    main_header.classList.add("sticky")
+  } else {
+    main_header.classList.remove("sticky");
+  }
+}
 
-   
-    
-    slideIndex++;
+// this is navbar property above
 
 
-    if(slideIndex>slides.length){slideIndex = 1}
-    slides[slideIndex-1].style.display = "flex";
-  data[slideIndex-1].style.display = 'flex'
-    setTimeout(showslides,4000);   // change image every 2 seconds
+
+// this is js code for side panel
+
+// console.log("dhfjkd",window.screen.width)
+// if(window.screen.width>=1204){
+//   document.getElementById("sidepannel").style.width = "550px"
+// }
+
+// console.log(window.matchMedia('(max-width:1200px)').matches)
+
+function check(){
+
+  if(!window.matchMedia('(max-width:1200px)').matches){
+    console.log(!window.matchMedia('(max-width:1200px)').matches)
+    document.querySelector('#sidepannel').style.display = 'flex'
+  
+    // alert('')
+    document.getElementById("sidepannel").style.width = "74%"
+  }else{
+    document.querySelector('#sidepannel').style.display = 'none'
+    closeNav()
+  }
+}
+
+$(document).ready(function(){
+  $(window).resize(function(){
+    check()
+  });
+});
+
+
+
+
+
+
+
+
+
+function openNav() {
+
+
+
+ 
+   document.getElementById("sidepannel").style.width = "550px"
+   document.getElementById('sidepannel').style.display="block"
 
 }
 
+function closeNav() {
+  document.getElementById("sidepannel").style.width = "0px"
+}
 
-//////////////////////              slide show ends here
 
 
 
-// client slideshow
-
-////slideshow is here

@@ -1,0 +1,102 @@
+#myAcc{
+    width: 100%;
+    margin-bottom: 100px;
+}
+#box{
+    height: 600px;
+    width: 800px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 100px;
+}
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 48px;
+}
+#detailsBox{
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 5px;
+    padding: 22px 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+#name p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+#name input{
+    width: 395px;
+    height: 48px;
+    /* padding: 22px 30px; */
+    padding-left: 20px;
+    background: white;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 599;
+    z-index: 3;
+    color: #292d35;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 35px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 20px;
+}
+#detailsBox>p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+#detailsBox>p:last-child{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(43, 42, 42);
+}
+#detailsBox>input{
+    width: 800px;
+    height: 48px;
+    /* padding: 22px 30px; */
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    font-weight: 590;
+    z-index: 3;
+    color: #292d35;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 35px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 20px;
+}
+#detailsBox>div{
+    display: flex;
+    margin-top: 25px;
+}
+#detailsBox button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
+    width: 300px;
+    font-size: 18px;
+    background-color: #DA2424;
+    color: white;
+    border-radius: 25px;
+    border: 0;
+    margin-left: -10px;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+body{
+    margin: 0px;
+}

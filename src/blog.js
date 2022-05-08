@@ -1,7 +1,4 @@
 
-// this is navbar property
-
-
 window.onscroll = function () { myFunction() };
 
 var main_header = document.getElementById("navbar");
@@ -35,7 +32,7 @@ function check(){
     document.querySelector('#sidepannel').style.display = 'flex'
   
     // alert('')
-    document.getElementById("sidepannel").style.width = "74%"
+    document.getElementById("sidepannel").style.width = "84%"
   }else{
     document.querySelector('#sidepannel').style.display = 'none'
     closeNav()
@@ -45,13 +42,9 @@ function check(){
 $(document).ready(function(){
   $(window).resize(function(){
     check()
+    console.log('working')
   });
 });
-
-
-
-
-
 
 
 
@@ -71,81 +64,5 @@ function closeNav() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//end here
-
-// this is the js code of  meal plan
-let acc = document.querySelector("#sidebar_bottom").children
-// console.log(acc[1], acc[4], acc[6])
-//1
-
-acc[1].addEventListener('click', function () {
-  this.classList.toggle("active");
-  let panel = this.nextElementSibling;
-  let check = window.matchMedia('(max-width:1209px)')
-  if (check.matches) {
-
-
-
-    if (panel.style.display === "block") {
-      panel.style.display = "none"
-    } else {
-      panel.style.display = "block"
-    }
-  }
-
-})
-// console.log(acc[1])
-acc[1].addEventListener('onmouseover',function(){
- 
-  this.classList.toggle("active");
-  let panel = this.nextElementSibling;
-  let check = window.matchMedia('(max-width:1209px)')
-  if (!check.matches) {
-    if (panel.style.display === "block") {
-      panel.style.display = "none"
-    } else {
-      panel.style.display = "block"
-    }
-  }
-})
-
-
-// }
 
 
