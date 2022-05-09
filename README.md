@@ -2,6 +2,8 @@
 
 Construct Week Project - Clone of fitmeals.com website
 
+Netlify Link :https://chipper-rabanadas-8cc75c.netlify.app/
+
 Fitmeals Clone
 This is a clone of an ecommerce website which is a project we got in our construct week of second unit in Masai school.
 
@@ -24,10 +26,10 @@ Grid and flex have been implemented to achieve the layouts on different pages.
 
 Clone the repository or download the code and run home.html file and enjoy browsing.
 
-First project..!!!
+# 3rd unit project..!!!
 
 User flow of the website
-First the user lands on the home page, where the user can read more about the products and services which are provided.
+First the user lands on the landing page, where the user can read more about the products and services which are provided.
 Then the user is been directed to the products page, On the products page the user can sort, filter and add the required products to the cart.
 In the cart page the user can apply a promo code and get a discount on the products which he wants to purchase.
 Before moving to the checkout page the user has to get authenticated and if the user has not logged in or signed in he is directed to the respective page. where he has to submit his credentials to login to the website.
