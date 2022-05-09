@@ -2521,6 +2521,9 @@ update for others  */
     margin-left: 20px;
 
 }
+#login>i:hover{
+    color: #8abb36;
+}
 
 #prv_navbar>div:nth-child(1)>i{
     color: #8ec038;

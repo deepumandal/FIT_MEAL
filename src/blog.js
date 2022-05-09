@@ -65,4 +65,17 @@ function closeNav() {
 
 
 
+let acc = document.querySelector("#sidebar_bottom").children
+console.log(acc[1],acc[4],acc[6])
 
+//1
+
+acc[1].addEventListener('click', function(){
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none"
+        } else {
+            panel.style.display = "block"
+        }
+})   
