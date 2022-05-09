@@ -17,7 +17,7 @@ Localstorage is used for the data-storing purpose (as we are not introduced to t
 Introduction of the Team,
 Shristi prasad
 Deepak Mandal,
-N Namara,
+N Namrata,
 MD Zubair,
 Onkar Deshmukh
 Website part,
@@ -122,9 +122,9 @@ And also using some parts like LocalStorage, Html, CSS, and JS.
 
 ___________________________________________________________________
 
-N Namarta:
+N Namrata:
 
-Myself N Namarta, This is my second collaborative team project at Masai school. I’m going to tell you my contribution in this project.
+I N Namrata, This is my second collaborative team project at Masai school. I’m going to tell you my contribution in this project.
 
 Here’s my LinkedIn profile:- https://www.linkedin.com/in/n-namrata-990059140
 
