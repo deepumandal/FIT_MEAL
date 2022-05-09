@@ -5,12 +5,13 @@ Construct Week Project - Clone of fitmeals.com website
 Netlify Link :https://chipper-rabanadas-8cc75c.netlify.app/
 
 Fitmeals Clone
-This is a clone of an ecommerce website which is a project we got in our construct week of second unit in Masai school.
+This is a clone of an ecommerce website which is a project we got in our construct week of third unit in Masai school.
 
 
 Tech stack used :
 HTML
 CSS
+Bootstrap
 JavaScript.
 
 
