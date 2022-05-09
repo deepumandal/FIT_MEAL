@@ -46,7 +46,20 @@ $(document).ready(function(){
 });
 
 
+let acc = document.querySelector("#sidebar_bottom").children
+console.log(acc[1],acc[4],acc[6])
 
+//1
+
+acc[1].addEventListener('click', function(){
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none"
+        } else {
+            panel.style.display = "block"
+        }
+})
 
 
 
@@ -68,7 +81,16 @@ function closeNav() {
 }
 
 
+//user display
 
+let user = JSON.parse(localStorage.getItem("signupDetails"));
+console.log("user:", user);
+if(user == null){
+  document.getElementById("user").innerHTML = "";
+}
+else{
+  document.getElementById("user").innerHTML = user[0].username;
+}
 
 let acc = document.querySelector("#sidebar_bottom").children
 console.log(acc[1],acc[4],acc[6])
