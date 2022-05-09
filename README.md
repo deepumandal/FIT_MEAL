@@ -76,13 +76,12 @@ About us
 ![1_k5l1EfiTLCePYKiMcwKvcA](https://user-images.githubusercontent.com/101566430/167442138-82d53215-df6f-4005-9912-f45e0934f8b7.png)
 page
 
-
 Team Contributions,
 Shristi Prasad:
 
 Myself Shristi Prasad. This is my second collaborative team project at Masai school. I’m going to tell you about my contribution to this project.
 
-Here’s my LinkedIn profile:-  https://www.linkedin.com/in/shrishti-prasad-bb2ba7192/
+Here’s my LinkedIn profile:-https://www.linkedin.com/in/shrishti-prasad-bb2ba7192/
 
 1. I worked on the Signup and Login page as well as the about us page and footer for all the pages with the help of HTML, CSS, and JavaScript.
 
@@ -98,55 +97,55 @@ Myself Deepak Mandal. This is my second collaborative team project at Masai scho
 
 Here’s my LinkedIn profile:-https://www.linkedin.com/in/nomercy-hunter-32b885211/
 
-1. I give my contribution to making the landing page navbar functionality using js and jquery
+1. I give my contribution to making the landing page, and navbar functionality using js and jquery.
 
-2. most of the CSS part is based on the properties of hover, animation, keyframes, and bootstrap for carousel and on JavaScript using loops and concepts of DOM.
+2. Most of the CSS part is based on the properties of hover, animation, keyframes, and bootstrap for carousel and on JavaScript using loops and concepts of DOM.
 
 3. I use JavaScript on-page to add functionality and for making websites responsive to used media queries.
 
 4. I tried my best to make the webpage exactly look original with the contribution and help of my team.
 
+I learn so many things from the project, like how to deal with time management, as a team leader how to manage all things.
+
 ___________________________________________________________________
 
-MD zubair
+MD Zubair
 
 Myself MD Zubair. This is my second collaborative team project at Masai school. I’m going to tell you about my contribution to this project.
 
-Here’s my LinkedIn profile:- http://www.linkedin.com/in/md-zubair-229321230
+Here’s my LinkedIn profile:-https://www.linkedin.com/in/md-zubair-229321230
 
-My contributions to this project start from the Cart page section, Continue with some major parts.
+My contributions to this project start from the Cart page section, and continue with some major parts.
 Payment Page Here the users can add their payment details, and address and can create their account.
-checkout page here products are added on this page
-And also using some parts like LocalStorage, Html, CSS, JS, etc…
+Checkout page here products are added on this page
+And also using some parts like LocalStorage, Html, CSS, and JS.
 
 ___________________________________________________________________
 
-N Namrata:
+N Namarta:
 
 Myself N Namarta, This is my second collaborative team project at Masai school. I’m going to tell you my contribution in this project.
 
-Here’s my LinkedIn profile:- https://www.linkedin.com/mwlite/in/maheendran-kp-aa2b9122b
+Here’s my LinkedIn profile:- https://www.linkedin.com/in/n-namrata-990059140
 
-1. I have used HTML, CSS, and javascript for storing local data to create the webpages.
+1. I have used HTML, CSS, and JavaScript for storing local data to create the webpages.
 
-2. I have created a meal plan page where the costumer can choose their individual products and suggestion according to their target.
+2. I have created a meal plan page where the customer can choose their individual products and suggestion according to their target.
 
 3., I used a lot of CSS properties to improve the user interface of the webpage.
 
-4 My contribution in this project is to create a few pages like Weight loss athletic and keto plans pages.
+4 My contribution to this project is to create a few pages like Weight loss athletic and keto plans pages.
 
 _____________________________________________________________
 
 Onkar Deshmukh
 
-I Onkar Deshmukh ,This is second team project of mine in Masai School . And here I mentioned my contribution in this project ,
+I Onkar Deshmukh, This is my second team project of mine in Masai School. And here I mentioned my contribution to this project.
 
 Here’s my LinkedIn profile:- https://www.linkedin.com/in/onkar-deshmukh-6a89a8213
 
-1. I worked on the Products page
+1. I worked on the Products page.
 
-2. I Used HTML CSS and Javascript to build webpages
+2. I Used HTML CSS and Javascript to build web pages.
 
 3. My experience of working in a team was great. Everyone did their best and we also helped each other out.
-
-I learn so many things from the project, like how to deal with time management, as a team leader how to manage all things.
