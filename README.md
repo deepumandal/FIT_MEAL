@@ -26,6 +26,8 @@ This is our second project at Masai School using JavaScript, HTML, bootstrap, jq
 This is our home page where we tried to build the same page as it is visible on the main website and also added some styles to look better, and linked the other pages to the home page.
 
 Home Page
+
+
 ![1_mOU4ea9C6AV-oPodEi9uBw](https://user-images.githubusercontent.com/101566430/167442012-e145c179-490f-4b12-bfdc-021ebe098c7d.png)
 
 
@@ -35,6 +37,8 @@ Coming on to the header and footer part and also the navbar we have made as simi
 
 
 Coming to the Signup part we have the working signup page as it is exactly visible in the website.
+
+
 ![1_nZexEhU6eCntnQSYWxZKjg](https://user-images.githubusercontent.com/101566430/167441828-81efac79-bdfb-4c9f-8b5b-ecd358b0eb8b.png)
 
 
@@ -45,11 +49,14 @@ We added our 100% effort on making all the pages was given by the team within th
 
 Here are some of the Snap Shots from the cloned website,
 
+
+
 Meal![1_OaS6PGXy7W39aZn4iySUHw](https://user-images.githubusercontent.com/101566430/167441918-80e6199f-38de-465d-8089-8e0fbc28eb5c.png)
 s plans
 
-
 product page
+
+
 ![1_8z9oW9qZ15CtJmGiXfSejg](https://user-images.githubusercontent.com/101566430/167441913-281dbdf6-02b7-4305-bb52-d2cf2fb6fe4f.png)
 
 
@@ -58,10 +65,14 @@ Blog
 ![1_SpLdVQbiZ0BYbXe-M-_n2Q](https://user-images.githubusercontent.com/101566430/167442093-1aec27ef-3135-4603-ac09-bc1b559f988b.png)
 
 Checkout part
+
+
 ![1_escvJr7ptHSSX_Yjy5gliA](https://user-images.githubusercontent.com/101566430/167442121-2e31fdf9-fbef-4298-9271-3028e6371d82.png)
 
 
 About us
+
+
 ![1_k5l1EfiTLCePYKiMcwKvcA](https://user-images.githubusercontent.com/101566430/167442138-82d53215-df6f-4005-9912-f45e0934f8b7.png)
 page
 
