@@ -1,6 +1,6 @@
-Project on Clone of “Fitmeal.com”
+Clone Project of “Fitmeal.com”
 
-Hey! Everyone, In this blog I am going to have a brief introduction to cloning of a website named “shop.com”,& We Ensure that we have given our level best on completing this project within the given time. As this was the first project that we worked on as a group where we have to add on 100% effort from each team member.
+Hey! Everyone, In this blog I am going to have a brief introduction to cloning of a website named “Fitmeals.com”,& We Ensure that we have given our level best on completing this project within the given time. As this was the first project that we worked on as a group where we have to add on 100% effort from each team member.
 
 website link -: https://nomercygod.github.io/FIT_MEAL/
 
