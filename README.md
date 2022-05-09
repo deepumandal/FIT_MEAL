@@ -27,7 +27,7 @@ Grid and flex have been implemented to achieve the layouts on different pages.
 
 Clone the repository or download the code and run home.html file and enjoy browsing.
 
-# 3rd unit project..!!!
+# 3rd unit project.
 
 User flow of the website
 First the user lands on the landing page, where the user can read more about the products and services which are provided.
